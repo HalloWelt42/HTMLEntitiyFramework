@@ -1,8 +1,13 @@
 <?php
+namespace oti\model;
+
+use ArrayAccess;
+
+
 
 class HTMLElements implements ArrayAccess {
 
-    private $html_elements;
+    protected $html_elements;
 
     public function __construct ()
     {
@@ -14,7 +19,7 @@ class HTMLElements implements ArrayAccess {
      */
     public function offsetExists ( $offset )
     {
-        // TODO: Implement offsetExists() method.
+        return isset($this->html_elements[$offset]);
     }
 
     /**
@@ -22,7 +27,7 @@ class HTMLElements implements ArrayAccess {
      */
     public function offsetGet ( $offset )
     {
-        // TODO: Implement offsetGet() method.
+        return isset($this->html_elements[$offset]) ? $this->html_elements[$offset] : null;
     }
 
     /**
@@ -30,7 +35,12 @@ class HTMLElements implements ArrayAccess {
      */
     public function offsetSet ( $offset , $value )
     {
-        // TODO: Implement offsetSet() method.
+        print_r( 'insert:' . PHP_EOL );
+        if (is_null($offset)) {
+            $this->html_elements[] = $value;
+        } else {
+            $this->html_elements[$offset] = $value;
+        }
     }
 
     /**
@@ -38,6 +48,6 @@ class HTMLElements implements ArrayAccess {
      */
     public function offsetUnset ( $offset )
     {
-        // TODO: Implement offsetUnset() method.
+        unset( $this->html_elements[$offset] );
     }
 }

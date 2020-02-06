@@ -1,4 +1,10 @@
 <?php
+
+
 namespace oti\model;
 
-class HTMLElement{}
+
+class HTMLAttribute
+{
+
+}
