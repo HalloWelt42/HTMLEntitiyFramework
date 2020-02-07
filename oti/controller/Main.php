@@ -4,7 +4,9 @@ namespace oti\controller;
 
 
 
+
 use oti\model\Body;
+use oti\model\Head;
 use oti\model\HTMLElements;
 
 
@@ -13,15 +15,25 @@ class Main{
   public function __construct(){
 
       $html_obj = (new HTMLElements());
-      $html_obj[]= new Body();
+      $html_obj[] = new Head;
+      $html_obj[] = new Body;
 
-      print_r(
-          $html_obj
-      );
+      $html_generator = new HTMLSerializer( $html_obj );
+      $html_generator->compile();
 
-      print_r(PHP_EOL);
-
-
+//      print_r(
+//          ( $html_obj[0] instanceof HTMLElement ) ? 'ja' : 'nein'
+//      );
+//
+//      print_r(PHP_EOL );
+//
+//      print_r(
+//          $html_obj
+//      );
+//
+//      print_r(PHP_EOL );
+//
+//
 
   }
 

@@ -4,7 +4,16 @@
 namespace oti\model\attributes;
 
 
-trait Href
+use oti\model\HTMLAttribute;
+
+class Href extends HTMLAttribute
 {
+
+    /**
+     * Href constructor.
+     */
+    public function __construct ( $value )
+    {
+    }
 
 }

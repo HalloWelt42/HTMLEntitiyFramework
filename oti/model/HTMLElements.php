@@ -5,7 +5,7 @@ use ArrayAccess;
 
 
 
-class HTMLElements implements ArrayAccess {
+class HTMLElements implements ArrayAccess  {
 
     protected $html_elements;
 
@@ -35,7 +35,6 @@ class HTMLElements implements ArrayAccess {
      */
     public function offsetSet ( $offset , $value )
     {
-        print_r( 'insert:' . PHP_EOL );
         if (is_null($offset)) {
             $this->html_elements[] = $value;
         } else {
