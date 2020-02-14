@@ -17,7 +17,6 @@ class Main{
       $html_obj = (new HTMLElements());
       $html_obj[] = new Head;
       $html_obj[] = new Body;
-xdebug_break();
       $html_generator = new HTMLSerializer( $html_obj );
       $html_generator->compile();
 

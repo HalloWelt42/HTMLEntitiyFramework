@@ -8,7 +8,9 @@ namespace oti\model;
  */
 class Body extends HTMLElement {
 
-    private $tag_name = 'body';
-
+    public function __construct ()
+    {
+        $this->element_name = 'body';
+    }
 
 }

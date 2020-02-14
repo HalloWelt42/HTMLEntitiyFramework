@@ -2,6 +2,7 @@
 
 namespace oti\controller;
 
+use oti\model\HTMLElement;
 use oti\model\HTMLElements;
 
 class HTMLSerializer{
@@ -24,9 +25,17 @@ class HTMLSerializer{
 
     public function parser( $obj ){
 
-        foreach ( (array)$obj as $html_obj ){
+        /**
+         * @var $html_obj HTMLElement
+         */
+        foreach ( $obj as $html_obj ){
             $this -> parser($html_obj);
+
+            print_r($html_obj->get_element_name());
+            print_r(PHP_EOL);
+
         }
+
 
     }
 
