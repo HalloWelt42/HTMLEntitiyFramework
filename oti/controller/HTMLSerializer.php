@@ -18,10 +18,14 @@ class HTMLSerializer{
 
 
     public function compile(){
+        $this ->parser($this->html_obj_list);
+    }
 
-        foreach ( (array)$this->html_obj_list as $html_obj ){
-            print_r( $html_obj );
-            print_r(PHP_EOL);
+
+    public function parser( $obj ){
+
+        foreach ( (array)$obj as $html_obj ){
+            $this -> parser($html_obj);
         }
 
     }

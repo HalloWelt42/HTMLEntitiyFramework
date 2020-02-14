@@ -5,3 +5,5 @@
 * Attribute lose in Namespace für Attribute zuordnen?
 * Attribute als Traits implementieren?
 * Scheibschutz für ArrayAccess von Klassen - Prüfen ob notwendig, da nur typsichere Elemente akzeptiert werden
+
+ArrayAccess verworfen, da das foreach auch getrigert wird, wenn keine Elemente mehr folgen
