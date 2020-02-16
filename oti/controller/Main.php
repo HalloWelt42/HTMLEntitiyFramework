@@ -4,21 +4,29 @@ namespace oti\controller;
 
 
 
+use oti\model\htmlelements\Body;
+use oti\model\htmlelements\Head;
+use oti\model\htmlelements\Html;
+use oti\model\htmlelements\Meta;
 
-use oti\model\Body;
-use oti\model\Head;
-use oti\model\HTMLElements;
+class Main
+{
+
+  public function __construct()
+  {
 
 
-class Main{
+    $html_base = (new Html)
+        ->add(
+            (new Head)
+                ->add(new Meta)
+        )
+        ->add(new Body);
 
-  public function __construct(){
+    $html_generator = new HTMLSerializer($html_base);
+    $doc = $html_generator->compile();
 
-      $html_obj = (new HTMLElements());
-      $html_obj[] = new Head;
-      $html_obj[] = new Body;
-      $html_generator = new HTMLSerializer( $html_obj );
-      $html_generator->compile();
+    print_r($doc);
 
   }
 

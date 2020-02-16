@@ -4,7 +4,8 @@
 namespace oti\model;
 
 
-class HTMLAttributes
+class HTMLAttributes extends HTMLAttribute
 {
+
 
 }
