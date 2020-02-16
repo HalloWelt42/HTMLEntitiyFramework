@@ -48,7 +48,7 @@ class HTMLElements implements ArrayAccess, Iterator
   {
 
     if( !$value instanceof HTMLElement ){
-      return false;
+      return false; //todo eception?
     }
 
     if (is_null($offset)) {
