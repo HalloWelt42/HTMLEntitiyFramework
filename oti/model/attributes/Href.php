@@ -9,9 +9,10 @@ use oti\model\HTMLAttribute;
 class Href extends HTMLAttribute
 {
 
-    /**
-     * Href constructor.
-     */
+  /**
+   * Href constructor.
+   * @param $value
+   */
     public function __construct ( $value )
     {
     }

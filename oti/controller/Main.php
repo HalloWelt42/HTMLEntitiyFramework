@@ -2,6 +2,7 @@
 
 namespace oti\controller;
 
+use oti\model\attributes\Charset;
 use oti\model\htmlelements\Body;
 use oti\model\htmlelements\Head;
 use oti\model\htmlelements\Html;
@@ -15,13 +16,15 @@ class Main
 
     print_r(
         (new HTMLSerializer(
-            (new Html)
-                ->add(
-                    (new Head)
-                        ->add(new Meta)
+            (new Html)->add_htmlelement(
+                (new Head)->add_htmlelement(
+                    (new Meta)->set_charset(Charset::UTF8 )
                 )
-                ->add(new Body)))
-            ->compile()
+
+            )->add_htmlelement(
+                new Body)
+
+        ))->compile()
     );
 
   }

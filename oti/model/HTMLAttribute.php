@@ -12,28 +12,18 @@ class HTMLAttribute
   protected $attribute_name;
 
   /**
-   * @var HTMLAttributes
+   * @var HTMLAttribute
    */
-  protected $html_attributes;
+  protected $html_attribute;
 
 
   /**
    * @param HTMLAttribute $attribute
    * @return $this
    */
-  public function add(HTMLAttribute $attribute)
+  public function set_attribute(HTMLAttribute $attribute)
   {
-    $this->html_attributes[] = $attribute;
-    return $this;
-  }
-
-  /**
-   * @param HTMLAttributes $attributes
-   * @return $this
-   */
-  public function set(HTMLAttributes $attributes)
-  {
-    $this->html_attributes = $attributes;
+    $this->html_attribute = $attribute;
     return $this;
   }
 
@@ -47,11 +37,15 @@ class HTMLAttribute
   }
 
   /**
-   * @return HTMLAttributes
+   * @return HTMLAttribute
    */
-  public function get_attributes()
+  public function get_attribute()
   {
-    return $this->html_attributes;
+    return $this->html_attribute;
   }
-
+/*
+  public function __toString()
+  {
+    return (string)$this->html_attribute;
+  }*/
 }

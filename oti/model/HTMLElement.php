@@ -15,14 +15,19 @@ class HTMLElement
    */
   protected $html_elements;
 
+  /**
+   * @var HTMLAttributes
+   */
+  protected $html_attributes;
 
-  public function add(HTMLElement $element)
+
+  public function add_htmlelement(HTMLElement $element)
   {
     $this->html_elements[] = $element;
     return $this;
   }
 
-  public function set(HTMLElements $elements)
+  public function set_htmlelements(HTMLElements $elements)
   {
     $this->html_elements = $elements;
     return $this;
