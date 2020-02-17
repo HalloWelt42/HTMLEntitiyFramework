@@ -1,14 +1,14 @@
 <?php
 
 
-namespace oti\model\htmlelements;
+namespace htmlentity\model\htmlelements;
 
-use oti\model\HTMLElement;
-use oti\model\HTMLElements;
+use htmlentity\model\HTMLElement;
+use htmlentity\model\HTMLElements;
 
 /**
  * Class Body
- * @package oti\model
+ * @package htmlentity\model
  */
 class Html extends HTMLElement {
 

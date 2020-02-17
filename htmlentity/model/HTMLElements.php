@@ -1,21 +1,27 @@
 <?php
 
-
-namespace oti\model;
-
+namespace htmlentity\model;
 
 use ArrayAccess;
 use Iterator;
 
-class HTMLAttributes implements ArrayAccess, Iterator
+
+/**
+ * Class HTMLElements
+ * @package htmlentity\model
+ */
+class HTMLElements implements ArrayAccess, Iterator
 {
 
-  protected $html_attributes;
+  protected $html_elements;
   protected $index;
 
+  /**
+   * HTMLElements constructor.
+   */
   public function __construct()
   {
-    $this->html_attributes = [];
+    $this->html_elements = [];
     $this->index = 0;
   }
 
@@ -24,7 +30,7 @@ class HTMLAttributes implements ArrayAccess, Iterator
    */
   public function offsetExists($offset)
   {
-    return isset($this->html_attributes[$offset]);
+    return isset($this->html_elements[$offset]);
   }
 
   /**
@@ -32,7 +38,7 @@ class HTMLAttributes implements ArrayAccess, Iterator
    */
   public function offsetGet($offset)
   {
-    return isset($this->html_attributes[$offset]) ? $this->html_attributes[$offset] : null;
+    return isset($this->html_elements[$offset]) ? $this->html_elements[$offset] : null;
   }
 
   /**
@@ -40,34 +46,36 @@ class HTMLAttributes implements ArrayAccess, Iterator
    */
   public function offsetSet($offset, $value)
   {
-    if (!$value instanceof HTMLAttribute) {
+
+    if( !$value instanceof HTMLElement ){
       return false; //todo eception?
     }
 
     if (is_null($offset)) {
-      $this->html_attributes[] = $value;
+      $this->html_elements[] = $value;
     } else {
-      $this->html_attributes[$offset] = $value;
+      $this->html_elements[$offset] = $value;
     }
   }
 
 
   /**
-   * @param $attribute
+   * @param $element
    * @return $this
    */
-  function add($attribute)
+  function add($element)
   {
-    $this->offsetSet(null, $attribute);
+    $this->offsetSet(null, $element);
     return $this;
   }
+
 
   /**
    * @inheritDoc
    */
   public function offsetUnset($offset)
   {
-    unset($this->html_attributes[$offset]);
+    unset($this->html_elements[$offset]);
   }
 
   /**
@@ -75,7 +83,7 @@ class HTMLAttributes implements ArrayAccess, Iterator
    */
   public function current()
   {
-    return $this->html_attributes[$this->index];
+    return $this->html_elements[$this->index];
   }
 
   /**
@@ -99,7 +107,7 @@ class HTMLAttributes implements ArrayAccess, Iterator
    */
   public function valid()
   {
-    return isset($this->html_attributes[$this->index]);
+    return isset($this->html_elements[$this->index]);
   }
 
   /**

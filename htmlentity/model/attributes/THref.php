@@ -1,7 +1,7 @@
 <?php
 
 
-namespace oti\model\attributes;
+namespace htmlentity\model\attributes;
 
 
 trait THref

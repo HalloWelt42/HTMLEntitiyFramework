@@ -1,10 +1,10 @@
 <?php
 
-namespace oti\model\htmlelements;
+namespace htmlentity\model\htmlelements;
 
 
-use oti\model\HTMLElement;
-use oti\model\HTMLElements;
+use htmlentity\model\HTMLElement;
+use htmlentity\model\HTMLElements;
 
 class Head extends HTMLElement {
 

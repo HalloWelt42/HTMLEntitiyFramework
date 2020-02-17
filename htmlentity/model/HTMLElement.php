@@ -1,6 +1,6 @@
 <?php
 
-namespace oti\model;
+namespace htmlentity\model;
 
 class HTMLElement
 {
@@ -19,6 +19,7 @@ class HTMLElement
      * @var HTMLAttributes
      */
     protected $html_attributes;
+
 
 
     public function add_htmlelement ( HTMLElement $element )
@@ -57,6 +58,19 @@ class HTMLElement
     public function get_elements ()
     {
         return $this -> html_elements;
+    }
+
+
+
+    # Hilfsfunktion für kurze Schreibweise in den Traits
+
+    /**
+     * @param HTMLAttribute $attribut_obj
+     */
+    protected function set_attribute( HTMLAttribute $attribut_obj ){
+        $this -> html_attributes[
+        $attribut_obj -> get_attribute_name()
+        ] = $attribut_obj;
     }
 
 }

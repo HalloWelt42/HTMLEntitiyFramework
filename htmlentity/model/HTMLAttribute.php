@@ -1,7 +1,7 @@
 <?php
 
 
-namespace oti\model;
+namespace htmlentity\model;
 
 
 class HTMLAttribute
@@ -29,9 +29,5 @@ class HTMLAttribute
       return $this;
   }
 
-/*
-  public function __toString()
-  {
-    return (string)$this->html_attribute;
-  }*/
+
 }

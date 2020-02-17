@@ -1,12 +1,12 @@
 <?php
 
-namespace oti\controller;
+namespace htmlentity\controller;
 
 use DOMDocument;
 use DOMElement;
-use oti\model\HTMLAttribute;
-use oti\model\HTMLElement;
-use oti\model\htmlelements\Html;
+use htmlentity\model\HTMLAttribute;
+use htmlentity\model\HTMLElement;
+use htmlentity\model\htmlelements\Html;
 
 class HTMLSerializer
 {

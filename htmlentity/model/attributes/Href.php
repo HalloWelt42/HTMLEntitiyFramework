@@ -1,10 +1,10 @@
 <?php
 
 
-namespace oti\model\attributes;
+namespace htmlentity\model\attributes;
 
 
-use oti\model\HTMLAttribute;
+use htmlentity\model\HTMLAttribute;
 
 class Href extends HTMLAttribute
 {
