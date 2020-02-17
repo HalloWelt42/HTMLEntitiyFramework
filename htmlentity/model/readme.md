@@ -14,3 +14,7 @@ DOM-Objekt als Zweig in DOM-Baum einfügen
 
 
 * https://www.php.de/forum/webentwicklung/php-einsteiger/1544972-dom-objekt-als-zweig-in-dom-baum-einf%C3%BCgen
+
+
+* Inline- und Blogelemente unterscheiden
+

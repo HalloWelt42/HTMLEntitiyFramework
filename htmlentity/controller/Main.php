@@ -26,11 +26,11 @@ class Main
                         )
                     )
 
-                    ->add_htmlelement(
-                        (new Meta)->set_http_equiv(
-                            (new HttpEquiv(HttpEquiv::REFRESH ))
-                        )
-                    )
+//                    ->add_htmlelement(
+//                        (new Meta)->set_http_equiv(
+//                            (new HttpEquiv(HttpEquiv::REFRESH ))
+//                        )
+//                    )
 
             )->add_htmlelement(
                 new Body

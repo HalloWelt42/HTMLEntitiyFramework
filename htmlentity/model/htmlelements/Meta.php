@@ -4,15 +4,13 @@
 namespace htmlentity\model\htmlelements;
 
 
-use htmlentity\model\attributes\TCharset;
-use htmlentity\model\attributes\THttpEquiv;
+use htmlentity\model\attributesets\TMetaTag;
 use htmlentity\model\HTMLElement;
 
 class Meta extends HTMLElement
 {
 
-    use TCharset;
-    use THttpEquiv;
+    use TMetaTag;
 
 
     public function __construct ()
