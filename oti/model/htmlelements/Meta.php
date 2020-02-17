@@ -19,6 +19,7 @@ class Meta extends HTMLElement
 
   public function set_charset( $value ){
     $this->html_attributes['charset'] = $value;
+    return $this;
   }
 
 }

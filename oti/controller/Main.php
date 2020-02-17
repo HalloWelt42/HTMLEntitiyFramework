@@ -18,7 +18,9 @@ class Main
         (new HTMLSerializer(
             (new Html)->add_htmlelement(
                 (new Head)->add_htmlelement(
-                    (new Meta)->set_charset(Charset::UTF8 )
+                    (new Meta)->set_charset(
+                        (new Charset())->set_value(Charset::UTF8 )
+                    )
                 )
 
             )->add_htmlelement(

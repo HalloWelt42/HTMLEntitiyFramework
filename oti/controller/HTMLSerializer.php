@@ -4,6 +4,7 @@ namespace oti\controller;
 
 use DOMDocument;
 use DOMElement;
+use oti\model\HTMLAttribute;
 use oti\model\HTMLElement;
 use oti\model\htmlelements\Html;
 
@@ -69,7 +70,6 @@ class HTMLSerializer
        * @var $child_element HTMLElement
        */
       foreach ($html_element->get_elements() as $child_element) {
-
         $node->appendChild(
             $this->parser(
                 $child_element,
@@ -79,6 +79,18 @@ class HTMLSerializer
             )
         );
       }
+    }
+
+
+    if( $html_element->get_attributes() ) {
+        /**
+         * @var $html_attibute HTMLAttribute
+         */
+        foreach ( $html_element -> get_attributes() as $html_attibute ) {
+            $attibute =$this -> dom -> createAttribute( $html_attibute -> get_attribute_name() );
+            $attibute -> value = $html_attibute -> get_value();
+            $node -> appendChild( $attibute );
+        }
     }
 
 
