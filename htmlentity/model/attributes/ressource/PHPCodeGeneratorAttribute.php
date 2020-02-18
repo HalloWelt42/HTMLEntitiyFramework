@@ -6,25 +6,27 @@ namespace htmlentity\model\attributes;
 use SplFileObject;
 
 new PHPCodeGeneratorAttribute;
-
+echo 'Remove exit declaration in line ' . __LINE__ .' on FILE: '. __FILE__ . PHP_EOL;
+exit;
 class PHPCodeGeneratorAttribute
 {
 
     private $mozilla_attribute_list;
-    private $target_dir_name;
+    private $target_dir_name_traits;
     private $exception_list;
     private $attributes;
-    private $attribute;
+    private $attribute_name;
     private $rendered;
 
     public function __construct ()
     {
-        $this -> target_dir_name= '/media/sf_sync/php_scripts/';
+        $this -> target_dir_name_traits = '/media/sf_sync/php_scripts/traits/';
+        $this -> target_dir_name_class = '/media/sf_sync/php_scripts/classes/';
         $this -> mozilla_attribute_list = [];
         $this -> exception_list = [ 'class' => 'class_type' ];
         $this -> load_mozilla_attributlist( [
-            'meta'
-            #'Globale Attribute' , 'Globales Attribut' , 'Globale Attribut' , 'Global attribute'
+            #'meta'
+            'Globale Attribute' , 'Globales Attribut' , 'Globale Attribut' , 'Global attribute'
         ] );
         $this -> render_attribute_list();
     }
@@ -32,17 +34,22 @@ class PHPCodeGeneratorAttribute
 
     private function render_attribute_list ()
     {
-        foreach ( $this -> attributes as $this -> attribute ) {
+        foreach ( $this -> attributes as $this -> attribute_name ) {
             file_put_contents(
-                $this -> target_dir_name . $this -> class_filename(),
+                $this -> target_dir_name_traits . $this -> get_trait_filename(),
                 $this -> get_phpcode_trait()
+            );
+
+            file_put_contents(
+                $this -> target_dir_name_class . $this -> get_class_filename(),
+                $this -> get_phpcode_class()
             );
 
         }
     }
 
 
-    public function get_phpcode_trait ()
+    private function get_phpcode_trait ()
     {
 
         return <<<RUN
@@ -65,7 +72,30 @@ RUN;
 
     }
 
-    public function output_on_screen ()
+    private function get_phpcode_class(){
+        return <<<CODE
+<?php
+
+namespace htmlentity\model\attributes\global;
+
+use htmlentity\model\HTMLAttribute;
+
+class {$this->get_classname()} extends HTMLAttribute
+{
+
+  public function __construct ( \$value = NULL )
+  {
+      \$this->attribute_name = '{$this->get_attribute_name()}';
+      \$this->attribute_value = \$value;
+
+  }
+
+
+}
+CODE;
+    }
+
+    private function output_on_screen ()
     {
 
         print_r( $this -> rendered );
@@ -77,7 +107,7 @@ RUN;
     /**
      * @param array $select
      */
-    public function load_mozilla_attributlist ( array $select )
+    private function load_mozilla_attributlist ( array $select )
     {
 
         $this -> attributes = [];
@@ -111,19 +141,29 @@ RUN;
     {
         return implode('_', array_map( function ( $item ) {
             return mb_strtolower( $item );
-        } , explode( '-' , $this -> attribute ) ) );
+        } , explode( '-' , $this -> attribute_name ) ) );
     }
 
     private function get_classname ()
     {
         return implode('', array_map( function ( $item ) {
             return ucfirst( $item );
-        } , explode( '-' , $this -> attribute ) ) );
+        } , explode( '-' , $this -> attribute_name ) ) );
     }
 
-    private function class_filename ()
+    private function get_trait_filename ()
     {
         return $this->get_traitname().'.php';
+    }
+
+    private function get_attribute_name ()
+    {
+        return $this->attribute_name;
+    }
+
+    private function get_class_filename ()
+    {
+        return $this->get_classname().'.php';
     }
 
 

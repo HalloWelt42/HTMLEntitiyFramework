@@ -1,8 +1,6 @@
 <?php
 
-
 namespace htmlentity\model\attributes;
-
 
 use htmlentity\model\HTMLAttribute;
 
