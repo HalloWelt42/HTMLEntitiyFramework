@@ -18,3 +18,5 @@ DOM-Objekt als Zweig in DOM-Baum einfügen
 
 * Inline- und Blogelemente unterscheiden
 
+Browserabhängigkeiten und -Support:
+* https://github.com/mdn/browser-compat-data
