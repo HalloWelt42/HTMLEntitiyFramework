@@ -1,0 +1,123 @@
+Attributname;Elemente;Beschreibung
+accept;<form>, <input>;Liste der Typen, die der Server akzeptiert, in der Regel ein Dateityp.
+accept-charset;<form>;Liste der unterstÃ¼tzten ZeichensÃ¤tze.
+accesskey;Globale Attribute;Definiert eine Tastenkombination zum Aktivieren oder HinzufÃ¼gen von Fokus auf das Element.
+action;<form>;Die URI eines Programms, das die Ã¼ber das Formular Ã¼bermittelten Informationen verarbeitet.
+align;<applet>, <caption>, <col>, <colgroup>,  <hr>, <iframe>, <img>, <table>, <tbody>,  <td>,  <tfoot> , <th>, <thead>, <tr>;Gibt die horizontale Ausrichtung des Elements an.
+alt;<applet>, <area>, <img>, <input>;Alternativer Text, falls ein Bild oder ein vergleichbares anderes Element nicht angezeigt werden kann.
+async;<script>;Gibt an, dass das Skript asynchron ausgefÃ¼hrt werden soll.
+autocomplete;<form>, <input>;Gibt an, ob die Kontrollen in diesem Formular standardmÃ¤ÃŸig ihre Werte automatisch durch den Browser vervollstÃ¤ndigen kÃ¶nnen.
+autofocus;<button>, <input>, <keygen>, <select>, <textarea>;Das Element sollte nach der geladenen Seite automatisch fokussiert werden.
+autoplay;<audio>, <video>;Das Audio oder Video sollte so schnell wie mÃ¶glich spielen.
+autosave;<input>;Bisherige Werte sollten Dropdowns von auswÃ¤hlbaren Werten Ã¼ber Seitenlasten bestehen bleiben.
+bgcolor;<body>, <col>, <colgroup>, <marquee>, <table>, <tbody>, <tfoot>, <td>, <th>, <tr>;"Hintergrundfarbe des Elements
+Hinweis: Dies ist ein veraltetes Attribut. Bitte benutze stattdessen die CSS background-color Eigenschachaft."
+border;<img>, <object>, <table>;"Die Randbreite eines Elements
+Hinweis: Die ist ein veraltetes Attribut. Bitte benutze stattdessen die CSS border Eigenschaft."
+buffered;<audio>, <video>;EnthÃ¤lt den Zeitbereich von bereits gepufferten Medien.
+challenge;<keygen>;Eine Herausforderung, die zusammen mit dem Ã¶ffentlichen SchlÃ¼ssel eingereicht wird.
+charset;<meta>, <script>;Deklariert die Zeichencodierung der Seite oder des Skripts.
+checked;<command>, <input>;Gibt an, ob das Element auf Seitenladung Ã¼berprÃ¼ft werden soll.
+cite;<blockquote>, <del>, <ins>, <q>;EnthÃ¤lt einen URI, der auf die Quelle des Angebots oder der Ã„nderung verweist.
+class;Globale Attribut;Oft mit CSS verwendet, um Elemente mit gemeinsamen Eigenschaften zu gestalten.
+code;<applet>;Gibt die URL der zu ladenden und ausgefÃ¼hrten Klassendatei des Applets an.
+codebase;<applet>;Dieses Attribut gibt die absolute oder relative URL des Verzeichnisses an, in dem Applets '.class-Dateien, die durch das Codeattribut referenziert werden, gespeichert sind.
+color;<basefont>, <font>, <hr>;"Dieses Attribut setzt die Textfarbe entweder mit einer benannten Farbe oder einer Farbe, die im hexadezimalen #RRGGBB-Format angegeben ist.
+Hinweis: Das ist ein veraltetestes Attribut. Bitte benutze stattdessen die CSS color Eigenschaft."
+cols;<textarea>;Definiert die Anzahl der Spalten in einem Textbereich.
+colspan;<td>, <th>;Das colspan-Attribut definiert die Anzahl der Spalten, die eine Zelle Ã¼berspannen soll.
+content;<meta>;Ein Wert, der mit http-equiv oder dem Namen verbunden ist, abhÃ¤ngig vom Kontext.
+contenteditable;Globales Attribut;Gibt an, ob der Inhalt des Elements bearbeitet werden kann.
+contextmenu;Globales Attribut;Definiert die ID eines <menu> - Elements, das als KontextmenÃ¼ des Elements dient.
+controls;<audio>, <video>;Gibt an, ob der Browser dem Benutzer die Wiedergabesteuerung anzeigen soll.
+coords;<area>;Ein Satz von Werten, die die Koordinaten des Hot-Spot-Bereichs angeben.
+crossorigin;<audio>, <img>, <link>, <script>, <video>;Wie das Element grenzÃ¼berschreitende Anfragen behandelt.
+data;<object>;Gibt die URL der Ressource an.
+data-*;Globales Attribut;ErmÃ¶glicht es Ihnen, benutzerdefinierte Attribute an ein HTML-Element anzuhÃ¤ngen.
+datetime;<del>, <ins>, <time>;Gibt das Datum und die Uhrzeit an, die dem Element zugeordnet sind.
+default;<track>;Zeigt an, dass die Spur aktiviert werden soll, es sei denn, die Einstellungen des Benutzers zeigen etwas anderes an.
+defer;<script>;Gibt an, dass das Skript nach dem Analysieren der Seite ausgefÃ¼hrt werden soll.
+dir;Globales Attribut;Definiert die Textrichtung. ZulÃ¤ssige Werte sind (links-nach-rechts oder rechts-nach-links)
+dirname;<input>, <textarea>; 
+disabled;<button>, <command>, <fieldset>, <input>, <keygen>, <optgroup>, <option>, <select>, <textarea>;Gibt an, ob der Benutzer mit dem Element interagieren kann.
+download;<a>, <area>;Zeigt an, dass der Hyperlink zum Herunterladen einer Ressource verwendet werden soll.
+draggable;Globales Attribut;Legt fest, ob das Element gezogen werden kann.
+dropzone;Globales Attribut;Gibt an, dass das Element das Fallenlassen von Inhalt auf ihm akzeptiert.
+enctype;<form>;Definiert den Inhaltstyp des Formulars, wenn die Methode POST ist.
+for;<label>, <output>;Beschreibt Elemente, die zu diesem gehÃ¶ren.
+form;<button>, <fieldset>, <input>, <keygen>, <label>, <meter>, <object>, <output>, <progress>, <select>, <textarea>;Gibt das Formular an, das der Besitzer des Elements ist.
+formaction;<input>, <button>;Gibt die Aktion des Elements an und Ã¼berschreibt die im <formular> definierte Aktion.
+headers;<td>, <th>;IDs der <th> -Elemente, die fÃ¼r dieses Element gelten.
+height;<canvas>, <embed>, <iframe>, <img>, <input>, <object>, <video>;"Gibt die HÃ¶he der hier aufgefÃ¼hrten Elemente an. FÃ¼r alle anderen Elemente verwenden Sie die Eigenschaft CSS height.
+Hinweis: In einigen FÃ¤llen wie <div> ist dies ein Legacy-Attribut, in welchem â€‹â€‹Fall die CSS height Eigenschaft stattdessen verwendet werden soll."
+hidden;Globales Attribut;Verhindert das Rendering des gegebenen Elements, wÃ¤hrend Kinderelemente, z.B. Script-Elemente, aktiv.
+high;<meter>;Zeigt die untere Schranke des oberen Bereichs an.
+href;<a>, <area>, <base>, <link>;Gibt die URL einer verknÃ¼pften Ressource an.
+hreflang;<a>, <area>, <link>;Gibt die Sprache der verknÃ¼pften Ressource an.
+http-equiv;<meta>; 
+icon;<command>;Gibt ein Bild an, das den Befehl darstellt.
+id;Globales Attribut;Oft mit CSS verwendet, um ein bestimmtes Element zu stylen. Der Wert dieses Attributs muss eindeutig sein.
+integrity;<link>, <script> ;"Sicherheits-Feature, das Browsern ermÃ¶glicht zu verifizieren, was sie abrufen.
+MDN Link"
+ismap;<img>;Gibt an, dass das Bild Teil einer Server-seitigen Image-Map ist.
+itemprop;Global attribute; 
+keytype;<keygen>;Spezifiziert den Typ des generierten SchlÃ¼ssels.
+kind;<track>;Spezifiziert die Art der Textspur.
+label;<track>;Definiert einen fÃ¼r den Nutzer lesbaren Titel der Textspur.
+lang;Global attribute;Definiert die im Element genutzte Sprache.
+language;<script>;Definiert die im Element genutzte Skriptsprache.
+list;<input>;Identifiziert eine dem Nutzer vorzuschlagende Liste vordefinierter Optionen.
+loop;<audio>, <bgsound>, <marquee>, <video>;Gibt an, ob das Medium ab dem Start beginnen soll, wenn es fertig ist.
+low;<meter>;Zeigt die obere Schranke des unteren Bereiches an.
+manifest;<html>;Gibt die URL des Cache-Manifests des Dokuments an.
+max;<input>, <meter>, <progress>;Gibt den maximal zulÃ¤ssigen Wert an.
+maxlength;<input>, <textarea>;Definiert die maximal zulÃ¤ssige Anzahl von Zeichen im Element.
+media;<a>, <area>, <link>, <source>, <style>;Gibt einen Hinweis auf das Medium an, fÃ¼r das die verknÃ¼pfte Ressource entworfen wurde.
+method;<form>;Legt fest, welche HTTP-Methode bei der Ãœbermittlung des Formulars verwendet werden soll. Kann GET (Standard) oder POST sein.
+min;<input>, <meter>;Gibt den zulÃ¤ssigen Mindestwert an.
+multiple;<input>, <select>;Gibt an, ob mehrere Werte in einer Eingabe des Typs E-Mail oder Datei eingegeben werden kÃ¶nnen.
+muted;<video>;Zeigt an, ob der Ton anfÃ¤nglich auf Seitenladung ausgeschaltet wird.
+name;<button>, <form>, <fieldset>, <iframe>, <input>, <keygen>, <object>, <output>, <select>, <textarea>, <map>, <meta>, <param>;Name des Elements. Zum Beispiel von dem Server verwendet, um die Felder in Form zu Ã¼bermitteln.
+novalidate;<form>;Dieses Attribut gibt an, dass das Formular bei der Ãœbermittlung nicht validiert werden darf.
+open;<details>;Gibt an, ob die Details auf Seite geladen werden sollen.
+optimum;<meter>;Zeigt den optimalen numerischen Wert an.
+pattern;<input>;Definiert einen regulÃ¤ren Ausdruck, den der Wert des Elements validiert.
+ping;<a>, <area>; 
+placeholder;<input>, <textarea>;Bietet dem Benutzer einen Hinweis darauf, was im Feld eingegeben werden kann.
+poster;<video>;Eine URL, die einen Posterrahmen anzeigt, bis der Benutzer spielt oder sucht.
+preload;<audio>, <video>;Indicates whether the whole resource, parts of it or nothing should be preloaded.
+radiogroup;<command>; 
+readonly;<input>, <textarea>;Indicates whether the element can be edited.
+rel;<a>, <area>, <link>;Specifies the relationship of the target object to the link object.
+required;<input>, <select>, <textarea>;Indicates whether this element is required to fill out or not.
+reversed;<ol>;Indicates whether the list should be displayed in a descending order instead of a ascending.
+rows;<textarea>;Defines the number of rows in a text area.
+rowspan;<td>, <th>;Defines the number of rows a table cell should span over.
+sandbox;<iframe>; 
+scope;<th>; 
+scoped;<style>; 
+seamless;<iframe>; 
+selected;<option>;Defines a value which will be selected on page load.
+shape;<a>, <area>; 
+size;<input>, <select>;Defines the width of the element (in pixels). If the element's type attribute is text or password then it's the number of characters.
+sizes;<link>, <img>, <source>; 
+slot;Global attribute;Assigns a slot in a shadow DOM shadow tree to an element.
+span;<col>, <colgroup>; 
+spellcheck;Global attribute;Indicates whether spell checking is allowed for the element.
+src;<audio>, <embed>, <iframe>, <img>, <input>, <script>, <source>, <track>, <video>;The URL of the embeddable content.
+srcdoc;<iframe>; 
+srclang;<track>; 
+srcset;<img>; 
+start;<ol>;Defines the first number if other than 1.
+step;<input>; 
+style;Global attribute;Definiert CSS Stile fÃ¼r das Element und Ã¼berschreibt andere Stile, welche z.B. in einem Stylesheet fÃ¼r das Element festgelegt sind.
+summary;<table>; 
+tabindex;Global attribute;Overrides the browser's default tab order and follows the one specified instead.
+target;<a>, <area>, <base>, <form>; 
+title;Global attribute;Text to be displayed in a tooltip when hovering over the element.
+type;<button>, <input>, <command>, <embed>, <object>, <script>, <source>, <style>, <menu>;Defines the type of the element.
+usemap;<img>,  <input>, <object>; 
+value;<button>, <option>, <input>, <li>, <meter>, <progress>, <param>;Defines a default value which will be displayed in the element on page load.
+width;<canvas>, <embed>, <iframe>, <img>, <input>, <object>, <video>;"For the elements listed here, this establishes the element's width.
+Note: For all other instances, such as <div>, this is a legacy attribute, in which case the CSS width property should be used instead."
+wrap;<textarea>;Indicates whether the text should be wrapped.

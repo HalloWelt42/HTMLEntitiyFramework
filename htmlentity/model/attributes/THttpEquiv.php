@@ -3,7 +3,6 @@
 
 namespace htmlentity\model\attributes;
 
-
 trait THttpEquiv
 {
 

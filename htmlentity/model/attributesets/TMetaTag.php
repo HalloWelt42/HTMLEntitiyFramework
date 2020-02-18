@@ -3,7 +3,6 @@
 
 namespace htmlentity\model\attributesets;
 
-
 use htmlentity\model\attributes\TCharset;
 use htmlentity\model\attributes\TContent;
 use htmlentity\model\attributes\THttpEquiv;
