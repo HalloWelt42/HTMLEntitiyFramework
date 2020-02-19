@@ -22,3 +22,4 @@ Browserabhängigkeiten und -Support:
 * https://github.com/mdn/browser-compat-data
 
 TGlobals erweitern
+* Mailsupdate
