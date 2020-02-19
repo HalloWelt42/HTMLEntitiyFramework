@@ -2,8 +2,12 @@
 
 namespace htmlentity\model;
 
+use htmlentity\model\attributesets\TGlobals;
+
 class HTMLElement
 {
+
+    use TGlobals;
 
     /**
      * @var string

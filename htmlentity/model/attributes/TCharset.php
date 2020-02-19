@@ -3,6 +3,7 @@
 
 namespace htmlentity\model\attributes;
 
+
 trait TCharset
 {
 

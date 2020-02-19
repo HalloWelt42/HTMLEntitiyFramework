@@ -3,7 +3,7 @@
 namespace htmlentity\controller;
 
 use htmlentity\model\attributes\Charset;
-use htmlentity\model\attributes\HttpEquiv;
+use htmlentity\model\attributes\Name;
 use htmlentity\model\htmlelements\Body;
 use htmlentity\model\htmlelements\Head;
 use htmlentity\model\htmlelements\Html;
@@ -26,11 +26,10 @@ class Main
                         )
                     )
 
-//                    ->add_htmlelement(
-//                        (new Meta)->set_http_equiv(
-//                            (new HttpEquiv(HttpEquiv::REFRESH ))
-//                        )
-//                    )
+                    ->add_htmlelement(
+                        (new Meta)->set_name(new Name())
+                    )
+
 
             )->add_htmlelement(
                 new Body
