@@ -1,5 +1,4 @@
-
-<?
+<?php
 namespace htmlentity\model\attributes\globals;
 
 trait TDropzone 

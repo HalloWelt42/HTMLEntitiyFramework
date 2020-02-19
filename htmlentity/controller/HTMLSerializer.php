@@ -87,6 +87,8 @@ class HTMLSerializer
          * @var $html_attibute HTMLAttribute
          */
         foreach ( $html_element -> get_attributes() as $html_attibute ) {
+            // TODO : Inhalt ggf prüfen. Vermeidung leerer Attribute : $html_attibute -> get_value()
+
             $attibute =$this -> dom -> createAttribute( $html_attibute -> get_attribute_name() );
             $attibute -> value = $html_attibute -> get_value();
             $node -> appendChild( $attibute );

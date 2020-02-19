@@ -21,10 +21,13 @@ class Main
                 (new Head)
 
                     ->add_htmlelement(
-                        (new Meta)->set_charset(
-                            (new Charset(Charset::UTF8 ))
-                        )
+                        (new Meta)
+
+                            ->set_charset(
+                                (new Charset(Charset::UTF8 ))
+                            )
                     )
+
 
                     ->add_htmlelement(
                         (new Meta)->set_name(new Name())

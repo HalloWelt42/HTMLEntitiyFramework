@@ -2,12 +2,15 @@
 
 namespace htmlentity\model;
 
+use htmlentity\model\attributesets\TEventHandler;
 use htmlentity\model\attributesets\TGlobals;
 
 class HTMLElement
 {
 
     use TGlobals;
+    use TEventHandler;
+
 
     /**
      * @var string
