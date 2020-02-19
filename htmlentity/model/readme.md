@@ -20,3 +20,5 @@ DOM-Objekt als Zweig in DOM-Baum einfügen
 
 Browserabhängigkeiten und -Support:
 * https://github.com/mdn/browser-compat-data
+
+TGlobals erweitern
