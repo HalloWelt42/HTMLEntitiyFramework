@@ -36,6 +36,14 @@ class HTMLElement
         return $this;
     }
 
+
+    /**
+     * Überschreibt bestehende Elemente
+     *
+     * @param HTMLElements $elements
+     *
+     * @return $this
+     */
     public function set_htmlelements ( HTMLElements $elements )
     {
         $this -> html_elements = $elements;

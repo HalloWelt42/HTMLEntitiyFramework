@@ -8,6 +8,12 @@
 
 * Scheibschutz für ArrayAccess von Klassen - Prüfen ob notwendig, da nur typsichere Elemente akzeptiert werden
 * Inline- und Blogelemente unterscheiden
+* set_attribute einführen und darüber die Annahme der Attribute steuern.
+
+
+# Planung - Class-Refactoring
+* Liste mit Eigenschaften erstellen
+* Präsentationsverhalten in der implementierungsphase
 
 
 Anregungen :
