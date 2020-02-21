@@ -45,9 +45,9 @@ class PHPCodeGeneratorAttribute
         $this -> list_short_trait = '';
         $this -> list_long_trait = '';
 
-        $this -> target_dir_name_traits = '/media/sf_sync/php_scripts/traits/';
-        $this -> target_dir_name_class = '/media/sf_sync/php_scripts/classes/';
-        $this -> target_dir_name_traitlist = '/media/sf_sync/php_scripts/TEventHandler.php';
+        $this -> target_dir_name_traits = 'traits/';
+        $this -> target_dir_name_class = 'classes/';
+        $this -> target_dir_name_traitlist = 'TForm.php';
 
         $this -> exception_list_internal_properties = [ 'class' => 'class_type' ];
         $this -> exception_list_attributes = [
@@ -55,11 +55,14 @@ class PHPCodeGeneratorAttribute
         ];
 
 
-//        $this -> load_mozilla_attributlist( [ #'meta'
-//            'Globale Attribute' , 'Globales Attribut' , 'Globale Attribut' , 'Global attribute' ] );
+        $this -> load_mozilla_attributlist( [
+            'form'
+          #    'Globale Attribute' , 'Globales Attribut' , 'Globale Attribut' , 'Global attribute'
+        ]
+        );
 
-        $str = 'onabort, onautocomplete, onautocompleteerror, onblur, oncancel, oncanplay, oncanplaythrough, onchange, onclick, onclose, oncontextmenu, oncuechange, ondblclick, ondrag, ondragend, ondragenter, ondragexit, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmousedown, onmouseenter, onmouseleave, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onpause, onplay, onplaying, onprogress, onratechange, onreset, onresize, onscroll, onseeked, onseeking, onselect, onshow, onsort, onstalled, onsubmit, onsuspend, ontimeupdate, ontoggle, onvolumechange, onwaiting';
-        $this->attributes=explode(', ',$str );
+#        $str = 'onabort, onautocomplete, onautocompleteerror, onblur, oncancel, oncanplay, oncanplaythrough, onchange, onclick, onclose, oncontextmenu, oncuechange, ondblclick, ondrag, ondragend, ondragenter, ondragexit, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmousedown, onmouseenter, onmouseleave, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onpause, onplay, onplaying, onprogress, onratechange, onreset, onresize, onscroll, onseeked, onseeking, onselect, onshow, onsort, onstalled, onsubmit, onsuspend, ontimeupdate, ontoggle, onvolumechange, onwaiting';
+#        $this->attributes=explode(', ',$str );
         #print_r($this->attributes);
         #exit;
         $this -> render_attribute_list();
@@ -68,11 +71,14 @@ class PHPCodeGeneratorAttribute
     private function render_attribute_list ()
     {
         foreach ( $this -> attributes as $this -> attribute_name ) {
-            #file_put_contents( $this -> target_dir_name_traits . $this -> get_trait_filename() , $this -> get_phpcode_trait() );
-            #file_put_contents( $this -> target_dir_name_class . $this -> get_class_filename() , $this -> get_phpcode_class() );
+          #print_r($this->get_traitname());
+          #print_r(PHP_EOL);
+            file_put_contents( $this -> target_dir_name_traits . $this -> get_trait_filename() , $this -> get_phpcode_trait() );
+            file_put_contents( $this -> target_dir_name_class . $this -> get_class_filename() , $this -> get_phpcode_class() );
             $this -> add_short_trait();
             $this -> add_long_class();
         }
+        #print_r($this->get_phpcode_attributset());
         file_put_contents($this->target_dir_name_traitlist,$this->get_phpcode_attributset());
     }
 
@@ -81,7 +87,7 @@ class PHPCodeGeneratorAttribute
     {
         return <<<TRAIT
 <?php
-namespace htmlentity\\model\\attributes\\eventhandler;
+namespace htmlentity\\model\\attributes;
 
 trait {$this -> get_traitname()} 
 {
@@ -101,7 +107,7 @@ TRAIT;
     {
         return <<<CLASS
 <?php
-namespace htmlentity\\model\\attributes\\eventhandler;
+namespace htmlentity\\model\\attributes;
 
 use htmlentity\model\HTMLAttribute;
 
@@ -143,7 +149,7 @@ TRAIT;
     }
 
     private function add_long_class(){
-        $this -> list_long_trait .= "use htmlentity\\model\\attributes\\eventhandler\\{$this->get_traitname()};" . PHP_EOL;
+        $this -> list_long_trait .= "use htmlentity\\model\\attributes\\{$this->get_traitname()};" . PHP_EOL;
     }
 
     private function output_on_screen ()

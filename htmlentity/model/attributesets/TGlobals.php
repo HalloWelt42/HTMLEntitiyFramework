@@ -4,9 +4,11 @@
 namespace htmlentity\model\attributesets;
 
 use htmlentity\model\attributes\globals\TAccesskey;
+use htmlentity\model\attributes\globals\TAria;
 use htmlentity\model\attributes\globals\TClass;
 use htmlentity\model\attributes\globals\TContenteditable;
 use htmlentity\model\attributes\globals\TContextmenu;
+use htmlentity\model\attributes\globals\TData;
 use htmlentity\model\attributes\globals\TDir;
 use htmlentity\model\attributes\globals\TDraggable;
 use htmlentity\model\attributes\globals\THidden;
@@ -23,9 +25,11 @@ use htmlentity\model\attributes\globals\TTitle;
 trait TGlobals
 {
     use TAccesskey;
+    use TAria;
     use TClass;
     use TContenteditable;
     use TContextmenu;
+    use TData;
     use TDir;
     use TDraggable;
     use THidden;

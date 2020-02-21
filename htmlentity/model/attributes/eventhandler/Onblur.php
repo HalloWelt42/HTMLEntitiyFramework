@@ -8,10 +8,10 @@ class Onblur extends HTMLAttribute
 
   public function __construct ( $value = NULL )
   {
-      $this->attribute_name = 'onblur';
-      $this->attribute_value = $value;
-
+      $this -> attribute_name = 'onblur';
+      $this -> attribute_value = $value;
   }
+
 
 
 }

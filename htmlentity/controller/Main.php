@@ -2,9 +2,12 @@
 
 namespace htmlentity\controller;
 
+use htmlentity\model\attributes\Action;
 use htmlentity\model\attributes\Charset;
+use htmlentity\model\attributes\globals\Data;
 use htmlentity\model\attributes\Name;
 use htmlentity\model\htmlelements\Body;
+use htmlentity\model\htmlelements\Form;
 use htmlentity\model\htmlelements\Head;
 use htmlentity\model\htmlelements\Html;
 use htmlentity\model\htmlelements\Meta;
@@ -28,14 +31,11 @@ class Main
                             )
                     )
 
-
-                    ->add_htmlelement(
-                        (new Meta)->set_name(new Name())
-                    )
-
-
             )->add_htmlelement(
-                new Body
+                (new Body)
+                    ->add_htmlelement(
+                        (new Form())->set_action(new Action(''))
+                    )
             )
 
         ))->compile()
