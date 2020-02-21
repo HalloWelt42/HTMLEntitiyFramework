@@ -17,7 +17,6 @@ class Main
 
   public function __construct()
   {
-
     print_r(
         (new HTMLSerializer(
             (new Html)->add_htmlelement(
