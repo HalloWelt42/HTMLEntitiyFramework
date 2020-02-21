@@ -13,7 +13,7 @@ use htmlentity\model\attributes\TNovalidate;
 use htmlentity\model\attributes\TTarget;
 
 
-trait TFormTag
+trait TFormAttributes
 {
     use TAccept;
     use TAcceptCharset;
@@ -24,5 +24,4 @@ trait TFormTag
     use TName;
     use TNovalidate;
     use TTarget;
-
 }

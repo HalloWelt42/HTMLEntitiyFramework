@@ -47,7 +47,7 @@ class PHPCodeGeneratorAttribute
 
         $this -> target_dir_name_traits = 'traits/';
         $this -> target_dir_name_class = 'classes/';
-        $this -> target_dir_name_traitlist = 'TForm.php';
+        $this -> target_dir_name_traitlist = 'TLinkAttributes.php';
 
         $this -> exception_list_internal_properties = [ 'class' => 'class_type' ];
         $this -> exception_list_attributes = [
@@ -56,7 +56,7 @@ class PHPCodeGeneratorAttribute
 
 
         $this -> load_mozilla_attributlist( [
-            'form'
+            'style'
           #    'Globale Attribute' , 'Globales Attribut' , 'Globale Attribut' , 'Global attribute'
         ]
         );
@@ -92,6 +92,13 @@ namespace htmlentity\\model\\attributes;
 trait {$this -> get_traitname()} 
 {
 
+  /**
+   * 
+   * 
+   * 
+   * @param {$this -> get_classname()} \$obj
+   * @return \$this
+   */
     public function set_{$this -> get_functionname()}( {$this -> get_classname()} \$obj ){
         \$this -> set_attribute(\$obj);
         return \$this;
@@ -114,6 +121,12 @@ use htmlentity\model\HTMLAttribute;
 class {$this -> get_classname()} extends HTMLAttribute
 {
 
+  /**
+   * 
+   * 
+   * Accept constructor.
+   * @param null \$value
+   */
   public function __construct ( \$value = NULL )
   {
       \$this->attribute_name = '{$this -> get_attribute_name()}';
@@ -135,7 +148,7 @@ namespace htmlentity\model\attributesets;
 
 {$this->list_long_trait}
 
-trait TEventHandler
+trait TLinkAttributes
 {
 {$this->list_short_trait}
 }

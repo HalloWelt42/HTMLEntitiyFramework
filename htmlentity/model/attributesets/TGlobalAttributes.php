@@ -22,7 +22,7 @@ use htmlentity\model\attributes\globals\TTabindex;
 use htmlentity\model\attributes\globals\TTitle;
 
 
-trait TGlobals
+trait TGlobalAttributes
 {
     use TAccesskey;
     use TAria;

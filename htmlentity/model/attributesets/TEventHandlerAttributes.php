@@ -67,7 +67,7 @@ use htmlentity\model\attributes\eventhandler\TOnvolumechange;
 use htmlentity\model\attributes\eventhandler\TOnwaiting;
 
 
-trait TEventHandler
+trait TEventHandlerAttributes
 {
     use TOnabort;
     use TOnautocomplete;

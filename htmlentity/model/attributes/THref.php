@@ -12,9 +12,9 @@ trait THref
      */
     private $href;
 
-    public function __construct ()
-    {
-        $this->href=new Href;
-    }
+  public function set_href( Href $obj ){
+    $this -> set_attribute($obj);
+    return $this;
+  }
 
 }

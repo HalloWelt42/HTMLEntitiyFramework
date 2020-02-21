@@ -2,14 +2,14 @@
 
 namespace htmlentity\model;
 
-use htmlentity\model\attributesets\TEventHandler;
-use htmlentity\model\attributesets\TGlobals;
+use htmlentity\model\attributesets\TEventHandlerAttributes;
+use htmlentity\model\attributesets\TGlobalAttributes;
 
 class HTMLElement
 {
 
-    use TGlobals;
-    use TEventHandler;
+    use TGlobalAttributes;
+    use TEventHandlerAttributes;
 
 
     /**

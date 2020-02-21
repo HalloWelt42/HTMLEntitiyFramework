@@ -1,20 +1,21 @@
 <?php
 
+
 namespace htmlentity\model\htmlelements;
 
+
+use htmlentity\model\attributesets\TLinkAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
 
-/**
- * Class Body
- * @package htmlentity\model
- */
-class Body extends HTMLElement
+class Link extends HTMLElement
 {
+
+  use TLinkAttributes;
 
   public function __construct(HTMLElements $html_elements = null)
   {
-    $this->element_name = 'body';
+    $this->element_name = 'link';
     $this->html_elements = ($html_elements === null) ? new HTMLElements() : $html_elements;
   }
 

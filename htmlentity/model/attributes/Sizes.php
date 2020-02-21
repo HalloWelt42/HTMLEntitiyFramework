@@ -3,20 +3,18 @@ namespace htmlentity\model\attributes;
 
 use htmlentity\model\HTMLAttribute;
 
-class Accept extends HTMLAttribute
+class Sizes extends HTMLAttribute
 {
 
-
   /**
-   * Eine Komma-unterteilte Liste von Inhaltstypen, die der Server akzeptiert.
-   *
-   *
+   * 
+   * 
    * Accept constructor.
    * @param null $value
    */
   public function __construct ( $value = NULL )
   {
-      $this->attribute_name = 'accept';
+      $this->attribute_name = 'sizes';
       $this->attribute_value = $value;
 
   }
