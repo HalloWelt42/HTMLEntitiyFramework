@@ -3,11 +3,15 @@
 namespace htmlentity\model\htmlelements;
 
 
+use htmlentity\model\attributesets\TEventHandlerAttributes;
+use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
 
 class Head extends HTMLElement
 {
+  use TGlobalAttributes;
+  use TEventHandlerAttributes;
 
   public function __construct(HTMLElements $html_elements = null)
   {

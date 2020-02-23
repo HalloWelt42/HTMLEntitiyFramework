@@ -70,29 +70,42 @@ class HTMLSerializer
        * @var $child_element HTMLElement
        */
       foreach ($html_element->get_elements() as $child_element) {
-        $node->appendChild(
-            $this->parser(
-                $child_element,
-                $this->dom->createElement(
-                    $child_element->get_element_name()
-                )
-            )
-        );
+
+        if ($child_element->get_element_name() === 'text') {
+
+          $node->appendChild(
+              $this->dom->createTextNode(
+                  $child_element->get_text()
+              )
+          );
+
+        } else {
+
+          $node->appendChild(
+              $this->parser(
+                  $child_element,
+                  $this->dom->createElement(
+                      $child_element->get_element_name()
+                  )
+              )
+          );
+
+        }
       }
     }
 
 
-    if( $html_element->get_attributes() ) {
-        /**
-         * @var $html_attibute HTMLAttribute
-         */
-        foreach ( $html_element -> get_attributes() as $html_attibute ) {
-            // TODO : Inhalt ggf prüfen. Vermeidung leerer Attribute : $html_attibute -> get_value()
+    if ($html_element->get_attributes()) {
+      /**
+       * @var $html_attibute HTMLAttribute
+       */
+      foreach ($html_element->get_attributes() as $html_attibute) {
+        // TODO : Inhalt ggf prüfen. Vermeidung leerer Attribute : $html_attibute -> get_value()
 
-            $attibute =$this -> dom -> createAttribute( $html_attibute -> get_attribute_name() );
-            $attibute -> value = $html_attibute -> get_value();
-            $node -> appendChild( $attibute );
-        }
+        $attibute = $this->dom->createAttribute($html_attibute->get_attribute_name());
+        $attibute->value = $html_attibute->get_value();
+        $node->appendChild($attibute);
+      }
     }
 
 

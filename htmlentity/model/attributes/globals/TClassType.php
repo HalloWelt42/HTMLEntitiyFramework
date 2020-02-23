@@ -3,7 +3,7 @@ namespace htmlentity\model\attributes\globals;
 
 use htmlentity\model\attributes\globals\ClassType;
 
-trait TClass
+trait TClassType
 {
 
     public function set_class( ClassType $obj ){

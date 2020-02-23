@@ -5,7 +5,7 @@ namespace htmlentity\model\attributesets;
 
 use htmlentity\model\attributes\globals\TAccesskey;
 use htmlentity\model\attributes\globals\TAria;
-use htmlentity\model\attributes\globals\TClass;
+use htmlentity\model\attributes\globals\TClassType;
 use htmlentity\model\attributes\globals\TContenteditable;
 use htmlentity\model\attributes\globals\TContextmenu;
 use htmlentity\model\attributes\globals\TData;
@@ -26,7 +26,7 @@ trait TGlobalAttributes
 {
     use TAccesskey;
     use TAria;
-    use TClass;
+    use TClassType;
     use TContenteditable;
     use TContextmenu;
     use TData;

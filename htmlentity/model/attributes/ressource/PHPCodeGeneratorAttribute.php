@@ -3,10 +3,10 @@
 
 namespace htmlentity\model\attributes\globals;
 
+
 use SplFileObject;
 
-#echo 'Remove exit declaration in line ' . __LINE__ . ' on FILE: ' . __FILE__ . PHP_EOL;
-#exit;
+
 new PHPCodeGeneratorAttribute;
 
 class PHPCodeGeneratorAttribute
@@ -17,7 +17,6 @@ class PHPCodeGeneratorAttribute
   private $target_dir_name_class;
   private $target_dir_name_traitlist;
 
-  private $exception_list_internal_properties;
   private $exception_list_attributes;
 
   private $attributes;
@@ -37,6 +36,15 @@ class PHPCodeGeneratorAttribute
    */
   private $list_long_trait;
   private $rendered;
+  /**
+   * @var array
+   */
+  private $reserved_keywords;
+  /**
+   * @var array
+   */
+  private $html_element;
+
 
   public function __construct()
   {
@@ -47,40 +55,55 @@ class PHPCodeGeneratorAttribute
 
     $this->target_dir_name_traits = 'traits/';
     $this->target_dir_name_class = 'classes/';
-    $this->target_dir_name_traitlist = 'TLinkAttributes.php';
 
-    $this->exception_list_internal_properties = ['class' => 'class_type'];
+
     $this->exception_list_attributes = [
         'data-*'
     ];
 
+    $this->reserved_keywords = [
+        'abstract', 'array', 'as', 'break', 'callable', 'case', 'catch', 'class',
+        'clone', 'const', 'continue', 'declare', 'default', 'die', 'do', 'echo',
+        'else', 'elseif', 'empty', 'enddeclare', 'endfor', 'endforeach', 'endif',
+        'endswitch', 'endwhile', 'eval', 'exit', 'extends', 'final', 'finally',
+        'global', 'goto', 'if', 'implements', 'include', 'include_once', 'instanceof',
+        'insteadof', 'interface   isset', 'list', 'namespace', 'new', 'or', 'print',
+        'private', 'protected', 'public', 'require', 'require_once', 'return', 'static',
+        'switch', 'throw', 'trait', 'try', 'unset', 'use', 'var', 'while', 'xor', 'yield',
+        'yield', 'from', '__CLASS__', '__DIR__', '__FILE__', '__FUNCTION__', '__LINE__',
+        '__METHOD__', '__NAMESPACE__', '__TRAIT__'
+    ];
+
+    $this->html_element='style';
 
     $this->load_mozilla_attributlist([
-            'style'
-          #    'Globale Attribute' , 'Globales Attribut' , 'Globale Attribut' , 'Global attribute'
+           $this->html_element
+            #'Globale Attribute' , 'Globales Attribut' , 'Globale Attribut' , 'Global attribute'
         ]
     );
+
 
 #        $str = 'onabort, onautocomplete, onautocompleteerror, onblur, oncancel, oncanplay, oncanplaythrough, onchange, onclick, onclose, oncontextmenu, oncuechange, ondblclick, ondrag, ondragend, ondragenter, ondragexit, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmousedown, onmouseenter, onmouseleave, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onpause, onplay, onplaying, onprogress, onratechange, onreset, onresize, onscroll, onseeked, onseeking, onselect, onshow, onsort, onstalled, onsubmit, onsuspend, ontimeupdate, ontoggle, onvolumechange, onwaiting';
 #        $this->attributes=explode(', ',$str );
     #print_r($this->attributes);
     #exit;
+
+
     $this->render_attribute_list();
   }
 
   private function render_attribute_list()
   {
-    foreach ($this->attributes as $this->attribute_name) {
-      #print_r($this->get_traitname());
-      #print_r(PHP_EOL);
-      $this->save_file_when_exists($this->target_dir_name_traits . $this->get_trait_filename(), $this->get_phpcode_attribute_trait());
-      $this->save_file_when_exists($this->target_dir_name_class . $this->get_class_filename(), $this->get_phpcode_attribute_class());
-      $this->add_short_trait();
-      $this->add_use_class();
+    if($this->attributes){
+      foreach ($this->attributes as $this->attribute_name) {
+        $this->save_file_when_exists($this->target_dir_name_traits . $this->get_trait_filename(), $this->get_phpcode_attribute_trait());
+        $this->save_file_when_exists($this->target_dir_name_class . $this->get_class_filename(), $this->get_phpcode_attribute_class());
+        $this->add_short_trait();
+        $this->add_use_class();
+      }
+      $this->save_file_when_exists("T{$this->get_classname_html()}Attributes.php", $this->get_phpcode_attributset_trait());
+      $this->save_file_when_exists("{$this->get_classname_html()}.php", $this->get_phpcode_htmlelements_class());
     }
-    #print_r($this->get_phpcode_attributset());
-    $this->save_file_when_exists($this->target_dir_name_traitlist, $this->get_phpcode_attributset_trait());
-    $this->save_file_when_exists("{$this->get_classname()}.php", $this->get_phpcode_htmlelements_class());
   }
 
   /**
@@ -88,6 +111,7 @@ class PHPCodeGeneratorAttribute
    * @param $source
    */
   private function save_file_when_exists($file,$source){
+
     if( file_exists($file) ){
       print_r($file . ' not saved!'.PHP_EOL);
       return;
@@ -160,7 +184,7 @@ namespace htmlentity\model\attributesets;
 
 {$this->list_long_trait}
 
-trait TLinkAttributes
+trait T{$this->get_classname_html()}Attributes
 {
 {$this->list_short_trait}
 }
@@ -168,22 +192,29 @@ TRAIT;
 
   }
 
-
   private function get_phpcode_htmlelements_class()
   {
     return <<<CLASS
 <?php
-namespace htmlentity\model\htmlelements;
+namespace htmlentity\\model\\htmlelements;
 
-use htmlentity\model\HTMLElement;
-use htmlentity\model\HTMLElements;
+use htmlentity\\model\\attributesets\\TGlobalAttributes;
+use htmlentity\\model\\attributesets\\TEventHandlerAttributes;
+use htmlentity\\model\\attributesets\\T{$this->get_classname_html()}Attributes;
+use htmlentity\\model\\HTMLElement;
+use htmlentity\\model\\HTMLElements;
 
-class {$this->get_classname()} extends HTMLElement
+class {$this->get_classname_html()} extends HTMLElement
 {
+
+  use TGlobalAttributes;
+  use TEventHandlerAttributes;
+
+  use T{$this->get_classname_html()}Attributes;
 
   public function __construct(HTMLElements \$html_elements = null)
   {
-    \$this->element_name = '{$this->get_functionname()}';
+    \$this->element_name = '{$this->html_element}';
     \$this->html_elements = (\$html_elements === null) ? new HTMLElements() : \$html_elements;
   }
 
@@ -193,6 +224,12 @@ CLASS;
 
   }
 
+  private function is_reserved_keyword(){
+      if( in_array($this->attribute_name,$this->reserved_keywords) ){
+        return true;
+    }
+    return false;
+  }
 
   private function add_short_trait()
   {
@@ -214,9 +251,9 @@ CLASS;
   }
 
   /**
-   * @param array $select
+   * @param array $html_elements
    */
-  private function load_mozilla_attributlist(array $select)
+  private function load_mozilla_attributlist(array $html_elements)
   {
 
     $this->attributes = [];
@@ -230,7 +267,7 @@ CLASS;
       }
 
       foreach (explode(',', $csv_entry[1]) as $html_tag) {
-        if (in_array(trim($html_tag, " \t\n\r\0\x0B" . "<>" . "\x00..\x1F" . chr(194) . chr(160)), $select)) {
+        if (in_array(trim($html_tag, " \t\n\r\0\x0B" . "<>" . "\x00..\x1F" . chr(194) . chr(160)), $html_elements)) {
           $this->attributes[] = $csv_entry[0];
         }
       }
@@ -253,9 +290,16 @@ CLASS;
 
   private function get_classname()
   {
-    return implode('', array_map(function ($item) {
-      return ucfirst($item);
-    }, explode('-', $this->attribute_name)));
+    return
+        implode('', array_map(function ($item) {
+          return ucfirst($item);
+          }, explode('-', $this->attribute_name))
+        ).($this -> is_reserved_keyword() ? 'Type':'');
+  }
+
+
+  private function get_classname_html(){
+    return ucfirst( $this->html_element );
   }
 
   private function get_trait_filename()

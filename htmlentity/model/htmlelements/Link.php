@@ -4,12 +4,17 @@
 namespace htmlentity\model\htmlelements;
 
 
+use htmlentity\model\attributesets\TEventHandlerAttributes;
+use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\attributesets\TLinkAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
 
 class Link extends HTMLElement
 {
+
+  use TGlobalAttributes;
+  use TEventHandlerAttributes;
 
   use TLinkAttributes;
 

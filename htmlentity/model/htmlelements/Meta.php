@@ -4,6 +4,8 @@
 namespace htmlentity\model\htmlelements;
 
 
+use htmlentity\model\attributesets\TEventHandlerAttributes;
+use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\attributesets\TMetaTag;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\htmlelements\groupinginterfaces\IHTMLMetadata;
@@ -11,6 +13,9 @@ use htmlentity\model\HTMLElements;
 
 class Meta extends HTMLElement implements IHTMLMetadata
 {
+
+  use TGlobalAttributes;
+  use TEventHandlerAttributes;
 
   use TMetaTag;
 

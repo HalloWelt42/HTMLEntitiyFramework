@@ -7,6 +7,8 @@ use htmlentity\model\attributes\Charset;
 use htmlentity\model\attributes\Href;
 use htmlentity\model\attributes\Type;
 use htmlentity\model\enum\EnumCharset;
+use htmlentity\model\HTMLContent;
+use htmlentity\model\htmlelements\Base;
 use htmlentity\model\htmlelements\Body;
 use htmlentity\model\htmlelements\Form;
 use htmlentity\model\htmlelements\Head;
@@ -14,6 +16,8 @@ use htmlentity\model\htmlelements\Html;
 use htmlentity\model\htmlelements\Input;
 use htmlentity\model\htmlelements\Link;
 use htmlentity\model\htmlelements\Meta;
+use htmlentity\model\htmlelements\Text;
+use htmlentity\model\htmlelements\Title;
 
 class Main
 {
@@ -27,6 +31,12 @@ class Main
             (new Head)
 
                 ->add_htmlelement(
+                    (new Title)->add_htmlelement(
+                        new Text(new HTMLContent('Titel-Überschrift'))
+                    )
+                )
+
+                ->add_htmlelement(
                     (new Meta)->set_charset(new Charset(EnumCharset::UTF8))
                 )
 
@@ -37,6 +47,9 @@ class Main
 
         ->add_htmlelement(
             (new Body)
+                ->add_htmlelement(
+                    (new Text(new HTMLContent('öüä?ÖÄÜ')))
+                )
                 ->add_htmlelement(
                 (new Form())->set_action(new Action('?'))
                     ->add_htmlelement(
