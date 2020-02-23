@@ -1,17 +1,12 @@
 <?php
-
 namespace htmlentity\model\htmlelements;
 
-use htmlentity\model\attributesets\TBodyAttributes;
-use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TGlobalAttributes;
+use htmlentity\model\attributesets\TEventHandlerAttributes;
+use htmlentity\model\attributesets\TBodyAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
 
-/**
- * Class Body
- * @package htmlentity\model
- */
 class Body extends HTMLElement
 {
 

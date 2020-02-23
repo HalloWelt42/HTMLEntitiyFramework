@@ -5,6 +5,7 @@ namespace htmlentity\controller;
 use htmlentity\model\attributes\Action;
 use htmlentity\model\attributes\Charset;
 use htmlentity\model\attributes\Href;
+use htmlentity\model\attributes\Src;
 use htmlentity\model\attributes\Type;
 use htmlentity\model\enum\EnumCharset;
 use htmlentity\model\HTMLContent;
@@ -16,6 +17,8 @@ use htmlentity\model\htmlelements\Html;
 use htmlentity\model\htmlelements\Input;
 use htmlentity\model\htmlelements\Link;
 use htmlentity\model\htmlelements\Meta;
+use htmlentity\model\htmlelements\NoScript;
+use htmlentity\model\htmlelements\Script;
 use htmlentity\model\htmlelements\Text;
 use htmlentity\model\htmlelements\Title;
 
@@ -35,14 +38,21 @@ class Main
                         new Text(new HTMLContent('Titel-Überschrift'))
                     )
                 )
+                ->add_htmlelement(
+                    (new NoScript)->add_htmlelement(
+                        new Text(new HTMLContent('Kein JS eingeschaltet'))
+                    )
+        )
 
                 ->add_htmlelement(
                     (new Meta)->set_charset(new Charset(EnumCharset::UTF8))
                 )
 
                 ->add_htmlelement(
-                    (new Link)->set_href(new Href(''))
+                    (new Script)->set_src(new Src('sr.js'))
                 )
+
+
         )
 
         ->add_htmlelement(

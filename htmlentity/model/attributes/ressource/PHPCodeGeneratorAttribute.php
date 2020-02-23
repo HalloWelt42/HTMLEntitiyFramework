@@ -74,7 +74,7 @@ class PHPCodeGeneratorAttribute
         '__METHOD__', '__NAMESPACE__', '__TRAIT__'
     ];
 
-    $this->html_element='style';
+    $this->html_element='body';
 
     $this->load_mozilla_attributlist([
            $this->html_element

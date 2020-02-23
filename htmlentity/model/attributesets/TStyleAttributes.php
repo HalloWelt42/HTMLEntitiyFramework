@@ -2,6 +2,7 @@
 
 namespace htmlentity\model\attributesets;
 
+use htmlentity\model\attributes\globals\TTitle;
 use htmlentity\model\attributes\TMedia;
 use htmlentity\model\attributes\TNonce;
 use htmlentity\model\attributes\TScoped;
@@ -14,5 +15,4 @@ trait TStyleAttributes
     use TNonce;
     use TScoped;
     use TType;
-
 }
