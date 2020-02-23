@@ -15,7 +15,6 @@
 # Planung - Class-Refactoring
 * Liste mit Eigenschaften erstellen
 * Präsentationsverhalten in der Implementierungsphase
-* CharsetEnum global erstellen, allg. globale Enums verwenden für schnelle Auswahl?
 
 
 Anregungen :

@@ -6,7 +6,6 @@ use htmlentity\model\HTMLAttribute;
 
 class Charset extends HTMLAttribute
 {
-  const UTF8 = 'utf-8';
 
   public function __construct ( $value = NULL )
   {

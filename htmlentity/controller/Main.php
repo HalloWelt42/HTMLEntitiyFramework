@@ -6,6 +6,7 @@ use htmlentity\model\attributes\Action;
 use htmlentity\model\attributes\Charset;
 use htmlentity\model\attributes\Href;
 use htmlentity\model\attributes\Type;
+use htmlentity\model\enum\EnumCharset;
 use htmlentity\model\htmlelements\Body;
 use htmlentity\model\htmlelements\Form;
 use htmlentity\model\htmlelements\Head;
@@ -26,7 +27,7 @@ class Main
             (new Head)
 
                 ->add_htmlelement(
-                    (new Meta)->set_charset(new Charset(Charset::UTF8))
+                    (new Meta)->set_charset(new Charset(EnumCharset::UTF8))
                 )
 
                 ->add_htmlelement(
