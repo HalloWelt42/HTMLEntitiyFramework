@@ -4,11 +4,13 @@ namespace htmlentity\controller;
 
 use htmlentity\model\attributes\Action;
 use htmlentity\model\attributes\Charset;
+use htmlentity\model\attributes\globals\Id;
 use htmlentity\model\attributes\Href;
 use htmlentity\model\attributes\Src;
 use htmlentity\model\attributes\Type;
 use htmlentity\model\enum\EnumCharset;
 use htmlentity\model\HTMLContent;
+use htmlentity\model\htmlelements\Address;
 use htmlentity\model\htmlelements\Base;
 use htmlentity\model\htmlelements\Body;
 use htmlentity\model\htmlelements\Form;
@@ -57,15 +59,22 @@ class Main
 
         ->add_htmlelement(
             (new Body)
+
                 ->add_htmlelement(
                     (new Text(new HTMLContent('öüä?ÖÄÜ')))
                 )
+
                 ->add_htmlelement(
                 (new Form())->set_action(new Action('?'))
                     ->add_htmlelement(
                         (new Input())->set_type(new Type('text'))
                     )
                 )
+
+                ->add_htmlelement(
+                    (new Address)->set_id(new Id('pp'))
+                )
+
         );
 
 

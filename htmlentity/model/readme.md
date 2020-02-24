@@ -6,9 +6,7 @@
 
 Überlegungen:
 
-* Scheibschutz für ArrayAccess von Klassen - Prüfen ob notwendig, da nur typsichere Elemente akzeptiert werden
-* Inline- und Blogelemente unterscheiden
-* set_attribute einführen und darüber die Annahme der Attribute steuern.
+* Inline- und Blogelemente usw. unterscheiden
 * HTML-Klassen besitzen Interfaces für die Gruppierung ihrer Zuordnungsmöglichkeiten, wie Metadata,Content ect.
 
 

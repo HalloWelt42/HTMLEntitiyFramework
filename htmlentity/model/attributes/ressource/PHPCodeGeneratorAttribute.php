@@ -44,17 +44,22 @@ class PHPCodeGeneratorAttribute
    * @var array
    */
   private $html_element;
+    /**
+     * @var string
+     */
+    private $main_dir;
 
 
-  public function __construct()
+    public function __construct()
   {
     $this->mozilla_attribute_list = [];
     #$this -> list_class = [];
     $this->list_short_trait = '';
     $this->list_long_trait = '';
 
-    $this->target_dir_name_traits = 'traits/';
-    $this->target_dir_name_class = 'classes/';
+    $this->main_dir = '/media/sf_sync/php_scripts/';
+    $this->target_dir_name_traits = $this->main_dir . 'traits/';
+    $this->target_dir_name_class = $this->main_dir . 'classes/';
 
 
     $this->exception_list_attributes = [
@@ -74,7 +79,7 @@ class PHPCodeGeneratorAttribute
         '__METHOD__', '__NAMESPACE__', '__TRAIT__'
     ];
 
-    $this->html_element='body';
+    $this->html_element='article';
 
     $this->load_mozilla_attributlist([
            $this->html_element
@@ -101,8 +106,8 @@ class PHPCodeGeneratorAttribute
         $this->add_short_trait();
         $this->add_use_class();
       }
-      $this->save_file_when_exists("T{$this->get_classname_html()}Attributes.php", $this->get_phpcode_attributset_trait());
-      $this->save_file_when_exists("{$this->get_classname_html()}.php", $this->get_phpcode_htmlelements_class());
+      $this->save_file_when_exists("{$this->main_dir}T{$this->get_classname_html()}Attributes.php", $this->get_phpcode_attributset_trait());
+      $this->save_file_when_exists("{$this->main_dir}{$this->get_classname_html()}.php", $this->get_phpcode_htmlelements_class());
     }
   }
 
