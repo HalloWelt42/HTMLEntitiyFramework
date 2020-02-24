@@ -79,7 +79,7 @@ class PHPCodeGeneratorAttribute
         '__METHOD__', '__NAMESPACE__', '__TRAIT__'
     ];
 
-    $this->html_element='area';
+    $this->html_element='th';
 
     $this->load_mozilla_attributlist([
            $this->html_element
