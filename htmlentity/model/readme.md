@@ -6,7 +6,7 @@
 
 Überlegungen:
 
-* Inline- und Blogelemente usw. unterscheiden
+* Inline- und Block-Elemente usw. unterscheiden
 * HTML-Klassen besitzen Interfaces für die Gruppierung ihrer Zuordnungsmöglichkeiten, wie Metadata,Content ect.
 
 
