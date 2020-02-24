@@ -8,7 +8,7 @@ use htmlentity\model\attributes\globals\TAria;
 use htmlentity\model\attributes\globals\TClassType;
 use htmlentity\model\attributes\globals\TContenteditable;
 use htmlentity\model\attributes\globals\TContextmenu;
-use htmlentity\model\attributes\globals\TData;
+use htmlentity\model\attributes\globals\TData_;
 use htmlentity\model\attributes\globals\TDir;
 use htmlentity\model\attributes\globals\TDraggable;
 use htmlentity\model\attributes\globals\THidden;
@@ -29,7 +29,7 @@ trait TGlobalAttributes
     use TClassType;
     use TContenteditable;
     use TContextmenu;
-    use TData;
+    use TData_;
     use TDir;
     use TDraggable;
     use THidden;

@@ -6,7 +6,7 @@ namespace htmlentity\model\attributes\globals;
 
 use htmlentity\model\HTMLAttribute;
 
-class Data extends HTMLAttribute
+class Data_ extends HTMLAttribute
 {
   public function __construct($name, $value)
   {
