@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TMeterAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IForms;
 
-class Meter extends HTMLElement
+class Meter extends HTMLElement implements IForms
 {
 
   use TGlobalAttributes;

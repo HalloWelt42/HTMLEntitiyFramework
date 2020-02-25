@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TTextareaAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IForms;
 
-class Textarea extends HTMLElement
+class Textarea extends HTMLElement implements IForms
 {
 
   use TGlobalAttributes;

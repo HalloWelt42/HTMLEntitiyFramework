@@ -5,8 +5,10 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IContentSection;
+use htmlentity\model\htmlelements\groupinginterfaces\ITextContent;
 
-class Main extends HTMLElement
+class Main extends HTMLElement implements IContentSection, ITextContent
 {
   use TGlobalAttributes;
   use TEventHandlerAttributes;

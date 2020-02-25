@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TTimeAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IInlineTextSemantics;
 
-class Time extends HTMLElement
+class Time extends HTMLElement implements IInlineTextSemantics
 {
 
   use TGlobalAttributes;

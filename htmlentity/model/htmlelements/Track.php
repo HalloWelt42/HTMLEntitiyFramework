@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TTrackAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IMultimedia;
 
-class Track extends HTMLElement
+class Track extends HTMLElement implements IMultimedia
 {
 
   use TGlobalAttributes;

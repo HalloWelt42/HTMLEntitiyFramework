@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TStyleAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IHTMLMetadata;
 
-class Style extends HTMLElement
+class Style extends HTMLElement implements IHTMLMetadata
 {
 
   use TGlobalAttributes;

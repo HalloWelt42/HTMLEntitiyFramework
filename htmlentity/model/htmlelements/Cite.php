@@ -5,8 +5,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IInlineTextSemantics;
 
-class Cite extends HTMLElement
+class Cite extends HTMLElement implements IInlineTextSemantics
 {
   use TGlobalAttributes;
   use TEventHandlerAttributes;

@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TKeygenAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IDeprecatedElements;
 
-class Keygen extends HTMLElement
+class Keygen extends HTMLElement implements IDeprecatedElements
 {
 
   use TGlobalAttributes;

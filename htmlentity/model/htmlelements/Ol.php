@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TOlAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\ITextContent;
 
-class Ol extends HTMLElement
+class Ol extends HTMLElement implements ITextContent
 {
 
   use TGlobalAttributes;

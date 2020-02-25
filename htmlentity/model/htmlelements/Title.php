@@ -5,8 +5,9 @@ namespace htmlentity\model\htmlelements;
 
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IHTMLMetadata;
 
-class Title extends HTMLElement
+class Title extends HTMLElement implements IHTMLMetadata
 {
 
 

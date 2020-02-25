@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TSelectAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IForms;
 
-class Select extends HTMLElement
+class Select extends HTMLElement implements IForms
 {
 
   use TGlobalAttributes;

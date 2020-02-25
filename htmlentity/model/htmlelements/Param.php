@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TParamAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IEmbeddedContent;
 
-class Param extends HTMLElement
+class Param extends HTMLElement implements IEmbeddedContent
 {
 
   use TGlobalAttributes;

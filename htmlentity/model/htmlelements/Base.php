@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\attributesets\TBaseAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IHTMLMetadata;
 
-class Base extends HTMLElement
+class Base extends HTMLElement implements IHTMLMetadata
 {
   use TGlobalAttributes;
   use TEventHandlerAttributes;

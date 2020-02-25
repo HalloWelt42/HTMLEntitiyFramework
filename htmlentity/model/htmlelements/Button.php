@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TButtonAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IForms;
 
-class Button extends HTMLElement
+class Button extends HTMLElement implements IForms
 {
 
   use TGlobalAttributes;

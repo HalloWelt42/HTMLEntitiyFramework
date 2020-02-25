@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TTheadAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\ITableContent;
 
-class Thead extends HTMLElement
+class Thead extends HTMLElement implements ITableContent
 {
 
   use TGlobalAttributes;

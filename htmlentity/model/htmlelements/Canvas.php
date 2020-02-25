@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TCanvasAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IScripting;
 
-class Canvas extends HTMLElement
+class Canvas extends HTMLElement implements IScripting
 {
 
   use TGlobalAttributes;

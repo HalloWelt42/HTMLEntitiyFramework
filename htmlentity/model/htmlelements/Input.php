@@ -9,8 +9,9 @@ use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\attributesets\TInputAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IForms;
 
-class Input extends HTMLElement
+class Input extends HTMLElement implements IForms
 {
 
   use TGlobalAttributes;

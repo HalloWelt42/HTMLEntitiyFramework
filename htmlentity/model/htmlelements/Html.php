@@ -7,6 +7,7 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IHTMLRoot;
 
 /**
  * html ist der root-Knoten aller HTML-Elemente
@@ -14,7 +15,7 @@ use htmlentity\model\HTMLElements;
  * Class Body
  * @package htmlentity\model
  */
-class Html extends HTMLElement
+class Html extends HTMLElement implements IHTMLRoot
 {
   use TGlobalAttributes;
   use TEventHandlerAttributes;

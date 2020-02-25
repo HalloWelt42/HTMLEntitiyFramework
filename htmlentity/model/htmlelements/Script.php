@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TScriptAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IScripting;
 
-class Script extends HTMLElement
+class Script extends HTMLElement implements IScripting
 {
 
   use TGlobalAttributes;

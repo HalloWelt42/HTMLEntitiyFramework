@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TAudioAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IMultimedia;
 
-class Audio extends HTMLElement
+class Audio extends HTMLElement implements IMultimedia
 {
 
   use TGlobalAttributes;

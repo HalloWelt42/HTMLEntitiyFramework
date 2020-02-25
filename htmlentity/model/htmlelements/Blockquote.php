@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TBlockquoteAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\ITextContent;
 
-class Blockquote extends HTMLElement
+class Blockquote extends HTMLElement implements ITextContent
 {
 
   use TGlobalAttributes;

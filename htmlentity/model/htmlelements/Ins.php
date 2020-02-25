@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TInsAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IDemarcatingEdits;
 
-class Ins extends HTMLElement
+class Ins extends HTMLElement implements IDemarcatingEdits
 {
 
   use TGlobalAttributes;

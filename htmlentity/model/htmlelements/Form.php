@@ -9,8 +9,9 @@ use htmlentity\model\attributesets\TFormAttributes;
 use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IForms;
 
-class Form extends HTMLElement
+class Form extends HTMLElement implements IForms
 {
 
   use TGlobalAttributes;

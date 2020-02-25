@@ -7,12 +7,13 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\ISectioningRoot;
 
 /**
  * Class Body
  * @package htmlentity\model
  */
-class Body extends HTMLElement
+class Body extends HTMLElement implements ISectioningRoot
 {
 
   use TGlobalAttributes;

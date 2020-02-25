@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TObjectAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IEmbeddedContent;
 
-class ObjectType extends HTMLElement
+class ObjectType extends HTMLElement implements IEmbeddedContent
 {
 
   use TGlobalAttributes;

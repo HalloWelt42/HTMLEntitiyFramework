@@ -9,8 +9,9 @@ use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\attributesets\TLinkAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IHTMLMetadata;
 
-class Link extends HTMLElement
+class Link extends HTMLElement implements IHTMLMetadata
 {
 
   use TGlobalAttributes;

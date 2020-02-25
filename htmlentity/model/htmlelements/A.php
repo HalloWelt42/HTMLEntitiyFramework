@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TAAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IInlineTextSemantics;
 
-class A extends HTMLElement
+class A extends HTMLElement implements IInlineTextSemantics
 {
 
   use TGlobalAttributes;

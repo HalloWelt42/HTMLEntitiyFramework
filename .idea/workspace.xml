@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e3adc75-ebf5-4dab-b7b2-329c63203aa1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/HTMLEntitiyFramework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/attributes/Open.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/attributes/TOpen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/attributes/ressource/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/attributesets/TDetailsAttributes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/attributesets/TMenuAttributes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Details.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Dialog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Picture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Rb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Rtc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Slot.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Summery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/groupinginterfaces/IHTMLRoot.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/groupinginterfaces/ISectioningRoot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/attributes/ressource/PHPCodeGeneratorAttribute.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/attributes/ressource/PHPCodeGeneratorAttribute.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/attributes/ressource/source.md" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/attributes/ressource/source.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/A.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/A.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Abbr.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Abbr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Area.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Area.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Aside.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Aside.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Audio.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Audio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/B.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/B.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Bdi.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Bdi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Bdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Bdo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Blockquote.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Blockquote.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Body.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Body.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Br.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Br.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Button.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Button.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Canvas.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Canvas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Caption.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Caption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Cite.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Cite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Code.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Code.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Col.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Col.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Colgroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Colgroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Data.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Datalist.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Datalist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Dd.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Dd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Del.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Del.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Dfn.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Dfn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Div.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Div.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Dl.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Dl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Dt.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Dt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Em.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Em.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Embed.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Embed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Fieldset.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Fieldset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Figcaption.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Figcaption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Figure.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Figure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/H1.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/H1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/H2.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/H2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/H3.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/H3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/H4.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/H4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/H5.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/H5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/H6.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/H6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/HGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/HGroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Head.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Hr.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Hr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Html.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/I.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/I.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Iframe.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Iframe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Img.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Img.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Input.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Ins.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Ins.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Kbd.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Kbd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Keygen.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Keygen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Label.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Label.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Legend.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Legend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Li.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Li.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Link.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Link.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Map.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Map.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Mark.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Mark.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Math.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Math.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Meter.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Meter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/NoScript.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/NoScript.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/ObjectType.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/ObjectType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Ol.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Ol.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Optgroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Optgroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Option.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Option.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Output.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Output.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/P.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/P.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Param.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Param.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Pre.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Pre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Progress.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Progress.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Q.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Q.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Rp.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Rp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Rt.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Rt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Ruby.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Ruby.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/S.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/S.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Samp.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Samp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Script.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Select.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Select.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Small.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Small.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Source.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Source.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Span.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Span.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Strong.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Strong.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Style.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Style.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Sub.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Sub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Sup.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Sup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Tbody.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Tbody.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Td.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Td.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Textarea.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Textarea.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Tfoot.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Tfoot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Th.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Th.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Thead.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Thead.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Time.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Time.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Title.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Title.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Tr.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Tr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Track.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Track.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/U.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/U.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Ul.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Ul.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/VarType.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/VarType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/htmlelements/Wbr.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmlentity/model/htmlelements/Wbr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlentity/model/readme.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="192.168.160.89" id="2f8738b5-01d4-4cbf-aa4a-9f6a4e5a1bbc" name="192.168.160.89" port="22" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/media/sf_php/HTMLEntitiyFramework" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="ProjectId" id="1XvXPAehBiiWgq9uSMY3sytAtQL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11.0.5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/htmlentity/model/htmlelements" />
+    <property name="settings.editor.selected.configurable" value="inlay.hints.PHP" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/htmlentity/model/htmlelements" />
+      <recent name="$PROJECT_DIR$/htmlentity/model/attributes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/htmlentity/model/attributes/ressource" />
+      <recent name="$PROJECT_DIR$/htmlentity/model/attributesets" />
+      <recent name="$PROJECT_DIR$/htmlentity/model/attributes/eventhandler" />
+      <recent name="$PROJECT_DIR$/htmlentity/model/attributes" />
+      <recent name="$PROJECT_DIR$/htmlentity/model/attributes/global" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e3adc75-ebf5-4dab-b7b2-329c63203aa1" name="Default Changelist" comment="" />
+      <created>1581927514774</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581927514774</updated>
+      <workItem from="1581927516698" duration="3790000" />
+      <workItem from="1581934716414" duration="34194000" />
+      <workItem from="1582530949706" duration="5012000" />
+      <workItem from="1582620174952" duration="6807000" />
+    </task>
+    <task id="LOCAL-00001" summary="Test Attribute implementiert">
+      <created>1581931590996</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581931590996</updated>
+    </task>
+    <task id="LOCAL-00002" summary="* weitere Attribute für meta-Tag&#10;* namespace &amp; ordner korrigiert">
+      <created>1581944738585</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581944738585</updated>
+    </task>
+    <task id="LOCAL-00003" summary="* readme!">
+      <created>1581954992954</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581954992954</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Code-Generator erweitert,optimiert">
+      <created>1582024358800</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582024358800</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Code-Generator erweitert um Klassenerzeugung">
+      <created>1582032258243</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582032258243</updated>
+    </task>
+    <task id="LOCAL-00006" summary="TGlobals eingeführt">
+      <created>1582106678368</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582106678368</updated>
+    </task>
+    <task id="LOCAL-00007" summary="TGlobals eingeführt, autogenerierte Klassen eingefügt">
+      <created>1582106818165</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582106818165</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Eventhandler eingeführt, Klassen-Generator erweitert">
+      <created>1582125416949</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582125416949</updated>
+    </task>
+    <task id="LOCAL-00009" summary="mailupdate">
+      <created>1582126590718</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1582126590718</updated>
+    </task>
+    <task id="LOCAL-00010" summary="TODO : Planung er Sichtbarkeit in der IDE">
+      <created>1582300661327</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582300661327</updated>
+    </task>
+    <task id="LOCAL-00011" summary="+article; +address-Tag">
+      <created>1582548180886</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1582548180886</updated>
+    </task>
+    <task id="LOCAL-00012" summary="+many more Tags; +Interfaces">
+      <created>1582559800114</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1582559800114</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Test Attribute implementiert" />
+    <MESSAGE value="* weitere Attribute für meta-Tag&#10;* namespace &amp; ordner korrigiert" />
+    <MESSAGE value="* readme!" />
+    <MESSAGE value="Code-Generator erweitert,optimiert" />
+    <MESSAGE value="Code-Generator erweitert um Klassenerzeugung" />
+    <MESSAGE value="TGlobals eingeführt" />
+    <MESSAGE value="TGlobals eingeführt, autogenerierte Klassen eingefügt" />
+    <MESSAGE value="Eventhandler eingeführt, Klassen-Generator erweitert" />
+    <MESSAGE value="mailupdate" />
+    <MESSAGE value="TODO : Planung er Sichtbarkeit in der IDE" />
+    <MESSAGE value="+article; +address-Tag" />
+    <MESSAGE value="+many more Tags; +Interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="+many more Tags; +Interfaces" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582635408965">
+      <screen x="0" y="0" width="1920" height="1132" />
+    </state>
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582635408965" />
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1581936940675" />
+    <state x="433" y="95" width="1273" height="994" key="CommitChangelistDialog2" timestamp="1582559799909">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state x="258" y="70" width="1273" height="994" key="CommitChangelistDialog2/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582126590386" />
+    <state x="258" y="70" key="CommitChangelistDialog2/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1582548180645" />
+    <state x="433" y="95" width="1278" height="1010" key="CommitChangelistDialog2/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582559799909" />
+    <state x="433" y="101" key="CommitChangelistDialog2/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582106817844" />
+    <state width="1878" height="496" key="GridCell.Tab.0.bottom" timestamp="1581932832100">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.0.bottom/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1581932832100" />
+    <state width="1878" height="496" key="GridCell.Tab.0.center" timestamp="1581932832098">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.0.center/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1581932832098" />
+    <state width="1878" height="496" key="GridCell.Tab.0.left" timestamp="1581932832097">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.0.left/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1581932832097" />
+    <state width="1878" height="496" key="GridCell.Tab.0.right" timestamp="1581932832099">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.0.right/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1581932832099" />
+    <state width="1878" height="496" key="GridCell.Tab.1.bottom" timestamp="1581932832104">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.1.bottom/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1581932832104" />
+    <state width="1878" height="496" key="GridCell.Tab.1.center" timestamp="1581932832102">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.1.center/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1581932832102" />
+    <state width="1878" height="496" key="GridCell.Tab.1.left" timestamp="1581932832101">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.1.left/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1581932832101" />
+    <state width="1878" height="496" key="GridCell.Tab.1.right" timestamp="1581932832103">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.1.right/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1581932832103" />
+    <state width="1878" height="496" key="GridCell.Tab.2.bottom" timestamp="1581932832107">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.2.bottom/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1581932832107" />
+    <state width="1878" height="496" key="GridCell.Tab.2.center" timestamp="1581932832106">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.2.center/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1581932832106" />
+    <state width="1878" height="496" key="GridCell.Tab.2.left" timestamp="1581932832105">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.2.left/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1581932832105" />
+    <state width="1878" height="496" key="GridCell.Tab.2.right" timestamp="1581932832107">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.2.right/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1581932832107" />
+    <state x="1029" y="316" key="MultipleFileMergeDialog" timestamp="1582270153415">
+      <screen x="0" y="0" width="1920" height="1132" />
+    </state>
+    <state x="1029" y="316" key="MultipleFileMergeDialog/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582270153415" />
+    <state x="510" y="486" key="NewPhpClassDialog" timestamp="1582627815451">
+      <screen x="0" y="0" width="1920" height="1132" />
+    </state>
+    <state x="510" y="486" key="NewPhpClassDialog/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582627815451" />
+    <state x="631" y="423" key="NewPhpClassDialog/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1581935207677" />
+    <state x="510" y="487" key="NewPhpClassDialog/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582622585655" />
+    <state x="510" y="515" key="NewPhpClassDialog/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582105119417" />
+    <state x="781" y="530" key="NewPhpFileDialog" timestamp="1582196153488">
+      <screen x="0" y="0" width="1920" height="1132" />
+    </state>
+    <state x="781" y="530" key="NewPhpFileDialog/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582196153488" />
+    <state x="469" y="239" key="SettingsEditor" timestamp="1582113217510">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="469" y="239" key="SettingsEditor/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582113217510" />
+    <state x="560" y="340" key="Vcs.Push.Dialog.v2" timestamp="1582559808350">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state x="560" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582126593739" />
+    <state x="560" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1582548183465" />
+    <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582559808350" />
+    <state x="560" y="359" key="Vcs.Push.Dialog.v2/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582106831262" />
+    <state x="100" y="79" width="1720" height="1021" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582531340783">
+      <screen x="0" y="23" width="1920" height="1109" />
+    </state>
+    <state x="100" y="79" width="1720" height="1021" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.1109/-1920.23.1920.1177@0.23.1920.1109" timestamp="1582531340783" />
+    <state x="749" y="526" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582620237944">
+      <screen x="0" y="0" width="1920" height="1136" />
+    </state>
+    <state x="749" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582531155293" />
+    <state x="749" y="526" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1136/-1920.0.1920.1200@0.0.1920.1136" timestamp="1582620237944" />
+    <state x="241" y="111" width="1233" height="867" key="find.popup" timestamp="1582559570097">
+      <screen x="0" y="0" width="1920" height="1134" />
+    </state>
+    <state x="241" y="111" width="1233" height="865" key="find.popup/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582120846373" />
+    <state x="241" y="111" width="1233" height="867" key="find.popup/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582559570097" />
+    <state x="552" y="345" width="816" height="584" key="find.popup/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582106359139" />
+    <state x="354" y="222" key="new project wizard" timestamp="1581953359497">
+      <screen x="0" y="0" width="1920" height="1132" />
+    </state>
+    <state x="354" y="222" key="new project wizard/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1581953359497" />
+    <state x="722" y="237" key="refactoring.ChangeSignatureDialog" timestamp="1582531429329">
+      <screen x="0" y="0" width="1920" height="1132" />
+    </state>
+    <state x="722" y="237" key="refactoring.ChangeSignatureDialog/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582531429329" />
+    <state x="218" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1582623629705">
+      <screen x="0" y="0" width="1920" height="1132" />
+    </state>
+    <state x="218" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582623629705" />
+  </component>
+</project>

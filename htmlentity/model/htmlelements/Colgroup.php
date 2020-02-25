@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TColgroupAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\ITableContent;
 
-class Colgroup extends HTMLElement
+class Colgroup extends HTMLElement implements ITableContent
 {
 
   use TGlobalAttributes;

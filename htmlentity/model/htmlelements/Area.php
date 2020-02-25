@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TAreaAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IMultimedia;
 
-class Area extends HTMLElement
+class Area extends HTMLElement implements IMultimedia
 {
 
   use TGlobalAttributes;

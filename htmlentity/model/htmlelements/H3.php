@@ -5,8 +5,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IContentSection;
 
-class H3 extends HTMLElement
+class H3 extends HTMLElement implements IContentSection
 {
   use TGlobalAttributes;
   use TEventHandlerAttributes;

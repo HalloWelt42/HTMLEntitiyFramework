@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TMapAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IMultimedia;
 
-class Map extends HTMLElement
+class Map extends HTMLElement implements IMultimedia
 {
 
   use TGlobalAttributes;

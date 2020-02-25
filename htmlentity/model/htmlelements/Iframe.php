@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TIframeAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IEmbeddedContent;
 
-class Iframe extends HTMLElement
+class Iframe extends HTMLElement implements IEmbeddedContent
 {
 
   use TGlobalAttributes;

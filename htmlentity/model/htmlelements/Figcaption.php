@@ -5,8 +5,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TGlobalAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\ITextContent;
 
-class Figcaption extends HTMLElement
+class Figcaption extends HTMLElement implements ITextContent
 {
   use TGlobalAttributes;
   use TEventHandlerAttributes;

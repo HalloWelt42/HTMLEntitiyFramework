@@ -6,8 +6,9 @@ use htmlentity\model\attributesets\TEventHandlerAttributes;
 use htmlentity\model\attributesets\TDelAttributes;
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IDemarcatingEdits;
 
-class Del extends HTMLElement
+class Del extends HTMLElement implements IDemarcatingEdits
 {
 
   use TGlobalAttributes;

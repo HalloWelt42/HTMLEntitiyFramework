@@ -5,8 +5,9 @@ namespace htmlentity\model\htmlelements;
 
 use htmlentity\model\HTMLElement;
 use htmlentity\model\HTMLElements;
+use htmlentity\model\htmlelements\groupinginterfaces\IScripting;
 
-class NoScript extends HTMLElement
+class NoScript extends HTMLElement implements IScripting
 {
 
   public function __construct(HTMLElements $html_elements = null)
