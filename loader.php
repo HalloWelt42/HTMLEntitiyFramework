@@ -1,15 +1,26 @@
 <?php
 
-spl_autoload_register(function($class_name){
+/**
+ * PSR-4 Autoloader
+ *
+ *
+ * @var $called_class string
+ */
+spl_autoload_register( function ( $called_class ) {
 
-  $class_file = str_replace(
-    '\\','/', __DIR__ . DIRECTORY_SEPARATOR . $class_name . '.php'
-  );
+    $project_name = 'HEF';
+    $prefix = "{$project_name}\\";
 
-  if(!file_exists($class_file)){
-    return;
-  }
+    $base_dir = __DIR__ . DIRECTORY_SEPARATOR . 'src\\';
 
-  require_once $class_file;
+    $str_len = strlen( $prefix );
+    $class = substr( $called_class , $str_len );
 
-});
+    $class_file = str_replace( '\\' , '/' , "{$base_dir}{$class}.php" );
+
+    if ( file_exists( $class_file ) ) {
+        require_once $class_file;
+    }
+
+
+} );
