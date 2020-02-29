@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e3adc75-ebf5-4dab-b7b2-329c63203aa1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/attributes/Target.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/attributes/Target.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/attributes/ressource/PHPCodeGeneratorAttribute.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/attributes/ressource/PHPCodeGeneratorAttribute.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +91,7 @@
       <workItem from="1582669321845" duration="3130000" />
       <workItem from="1582931285198" duration="624000" />
       <workItem from="1582985911607" duration="739000" />
+      <workItem from="1582998046357" duration="420000" />
     </task>
     <task id="LOCAL-00001" summary="Test Attribute implementiert">
       <created>1581931590996</created>
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582559800114</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=".DS_Store">
+      <created>1582998111377</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1582998111377</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +205,8 @@
     <MESSAGE value="TODO : Planung er Sichtbarkeit in der IDE" />
     <MESSAGE value="+article; +address-Tag" />
     <MESSAGE value="+many more Tags; +Interfaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="+many more Tags; +Interfaces" />
+    <MESSAGE value=".DS_Store" />
+    <option name="LAST_COMMIT_MESSAGE" value=".DS_Store" />
   </component>
   <component name="WindowStateProjectService">
     <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582635408965">
@@ -206,9 +214,10 @@
     </state>
     <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582635408965" />
     <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1581936940675" />
-    <state x="433" y="95" width="1273" height="994" key="CommitChangelistDialog2" timestamp="1582559799909">
-      <screen x="0" y="0" width="1920" height="1134" />
+    <state x="379" y="88" width="1273" height="994" key="CommitChangelistDialog2" timestamp="1582998111040">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="379" y="88" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582998111040" />
     <state x="258" y="70" width="1273" height="994" key="CommitChangelistDialog2/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582126590386" />
     <state x="258" y="70" key="CommitChangelistDialog2/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1582548180645" />
     <state x="433" y="95" width="1278" height="1010" key="CommitChangelistDialog2/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582559799909" />
@@ -286,9 +295,10 @@
     </state>
     <state x="410" y="209" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582985899681" />
     <state x="469" y="239" key="SettingsEditor/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582113217510" />
-    <state x="560" y="340" key="Vcs.Push.Dialog.v2" timestamp="1582559808350">
-      <screen x="0" y="0" width="1920" height="1134" />
+    <state x="490" y="315" key="Vcs.Push.Dialog.v2" timestamp="1582998114553">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="490" y="315" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1582998114553" />
     <state x="560" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582126593739" />
     <state x="560" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1582548183465" />
     <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582559808350" />
