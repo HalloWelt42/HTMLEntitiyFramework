@@ -57,7 +57,7 @@ class PHPCodeGeneratorAttribute
     $this->list_short_trait = '';
     $this->list_long_trait = '';
 
-    $this->main_dir = '/media/sf_sync/php_scripts/';
+    #$this->main_dir = '/media/sf_sync/php_scripts/';
     $this->target_dir_name_traits = $this->main_dir . 'traits/';
     $this->target_dir_name_class = $this->main_dir . 'classes/';
 
