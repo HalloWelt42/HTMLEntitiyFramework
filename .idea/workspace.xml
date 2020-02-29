@@ -92,6 +92,7 @@
       <workItem from="1582931285198" duration="624000" />
       <workItem from="1582985911607" duration="739000" />
       <workItem from="1582998046357" duration="420000" />
+      <workItem from="1582999007423" duration="272000" />
     </task>
     <task id="LOCAL-00001" summary="Test Attribute implementiert">
       <created>1581931590996</created>
@@ -184,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582998111377</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=".DS_Store">
+      <created>1582999199402</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582999199402</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,10 +222,10 @@
     </state>
     <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582635408965" />
     <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1581936940675" />
-    <state x="379" y="88" width="1273" height="994" key="CommitChangelistDialog2" timestamp="1582998111040">
+    <state x="379" y="88" width="1273" height="994" key="CommitChangelistDialog2" timestamp="1582999199217">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="379" y="88" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582998111040" />
+    <state x="379" y="88" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582999199217" />
     <state x="258" y="70" width="1273" height="994" key="CommitChangelistDialog2/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582126590386" />
     <state x="258" y="70" key="CommitChangelistDialog2/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1582548180645" />
     <state x="433" y="95" width="1278" height="1010" key="CommitChangelistDialog2/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582559799909" />
@@ -295,10 +303,10 @@
     </state>
     <state x="410" y="209" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582985899681" />
     <state x="469" y="239" key="SettingsEditor/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582113217510" />
-    <state x="490" y="315" key="Vcs.Push.Dialog.v2" timestamp="1582998114553">
+    <state x="490" y="315" key="Vcs.Push.Dialog.v2" timestamp="1582999208766">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="490" y="315" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1582998114553" />
+    <state x="490" y="315" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1582999208766" />
     <state x="560" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582126593739" />
     <state x="560" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1582548183465" />
     <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582559808350" />
