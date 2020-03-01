@@ -1,0 +1,12 @@
+{
+  "name":"hallowelt42/htmlentityframework",
+  "license": "mit",
+  "autoload": {
+    "psr-4": {
+      "HEF\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.1"
+  }
+}
