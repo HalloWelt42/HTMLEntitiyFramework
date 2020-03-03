@@ -6,6 +6,8 @@ use HEF\model\HTMLAttribute;
 class Rel extends HTMLAttribute
 {
 
+  const STYLESHEET = 'stylesheet';
+
   /**
    * 
    * 
