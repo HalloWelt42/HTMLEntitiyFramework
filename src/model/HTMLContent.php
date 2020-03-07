@@ -8,18 +8,27 @@ class HTMLContent
 {
 
   private $text;
+  private $nbsp;
 
-  public function __construct( $text )
+  public function __construct($text)
   {
-    $this->text = $text;
+    $this->nbsp = false;
+    $this->set($text);
   }
 
-  public function set( $text ){
-    $this->text=$text;
+  public function set_nbsp(bool $val)
+  {
+    $this->nbsp = $val;
+  }
+
+  public function set($text)
+  {
+    $this->text = $this->nbsp ? str_replace(' ', '&nbsp;', $text) : $text;
     return $this;
   }
 
-  public function get_text(){
+  public function get_text()
+  {
     return $this->text;
   }
 

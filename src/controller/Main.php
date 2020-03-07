@@ -4,6 +4,7 @@ namespace HEF\controller;
 
 use HEF\model\attributes\Action;
 use HEF\model\attributes\Charset;
+use HEF\model\attributes\globals\ClassType;
 use HEF\model\attributes\globals\Id;
 use HEF\model\attributes\Src;
 use HEF\model\attributes\Type;
@@ -58,7 +59,7 @@ class Main
             (new Body)
 
                 ->add_htmlelement(
-                    (new Text(new HTMLContent('öüä?ÖÄÜ')))
+                    (new Text(new HTMLContent(' text ')))
                 )
 
                 ->add_htmlelement(
@@ -68,8 +69,9 @@ class Main
                     )
                 )
 
-                ->add_htmlelement(
-                    (new Address)->set_id(new Id('pp'))
+                ->add_htmlelement((new Address)
+                        ->set_id(new Id('pp'))
+                    ->set_class(new ClassType('foo bar'))
                 )
 
         );

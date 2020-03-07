@@ -3,7 +3,7 @@ namespace HEF\model\htmlelements;
 
 use HEF\model\attributesets\TGlobalAttributes;
 use HEF\model\attributesets\TEventHandlerAttributes;
-use HEF\model\attributesets\TAAttributes;
+use HEF\model\attributesets\TAttributes;
 use HEF\model\HTMLElement;
 use HEF\model\HTMLElements;
 use HEF\model\htmlelements\groupinginterfaces\IInlineTextSemantics;
@@ -14,7 +14,7 @@ class A extends HTMLElement implements IInlineTextSemantics
   use TGlobalAttributes;
   use TEventHandlerAttributes;
 
-  use TAAttributes;
+  use TAttributes;
 
   public function __construct(HTMLElements $html_elements = null)
   {

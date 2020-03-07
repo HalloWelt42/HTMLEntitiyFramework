@@ -12,7 +12,7 @@ use HEF\model\attributes\TShape;
 use HEF\model\attributes\TTarget;
 
 
-trait TAAttributes
+trait TAttributes
 {
     use TDownload;
     use THref;

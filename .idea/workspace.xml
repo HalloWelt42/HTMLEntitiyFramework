@@ -4,7 +4,12 @@
     <list default="true" id="6e3adc75-ebf5-4dab-b7b2-329c63203aa1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/HTMLEntitiyFramework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HTMLEntitiyFramework.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/attributes/Rel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/attributes/Rel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/HTMLContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/HTMLContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/attributes/globals/ClassType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/attributes/globals/ClassType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/attributesets/TAAttributes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/attributesets/TAttributes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/htmlelements/A.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/htmlelements/A.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +19,7 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <executable />
+      <executable path="composer" />
     </execution>
   </component>
   <component name="Git.Settings">
@@ -36,7 +41,40 @@
       </server>
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3.11" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3.11">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1XvXPAehBiiWgq9uSMY3sytAtQL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,7 +88,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11.0.5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -98,7 +136,8 @@
       <workItem from="1582999007423" duration="768000" />
       <workItem from="1583060653476" duration="633000" />
       <workItem from="1583063190813" duration="235000" />
-      <workItem from="1583192726240" duration="601000" />
+      <workItem from="1583192726240" duration="4284000" />
+      <workItem from="1583588867707" duration="4257000" />
     </task>
     <task id="LOCAL-00001" summary="Test Attribute implementiert">
       <created>1581931590996</created>
@@ -212,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583061878853</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Rel Stylesheet">
+      <created>1583262733123</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1583262733123</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,22 +282,31 @@
     <MESSAGE value=".DS_Store" />
     <MESSAGE value="ignore .DS_Store" />
     <MESSAGE value="add composer.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="add composer.json" />
+    <MESSAGE value="Rel Stylesheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rel Stylesheet" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="722" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583609289841">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="722" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583609289841" />
     <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582635408965">
       <screen x="0" y="0" width="1920" height="1132" />
     </state>
     <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582635408965" />
     <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1581936940675" />
-    <state x="379" y="88" width="1273" height="994" key="CommitChangelistDialog2" timestamp="1583061878717">
+    <state x="668" y="73" width="1273" height="994" key="CommitChangelistDialog2" timestamp="1583262732950">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="379" y="88" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1583061878717" />
+    <state x="668" y="73" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1583262732950" />
     <state x="258" y="70" width="1273" height="994" key="CommitChangelistDialog2/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582126590386" />
     <state x="258" y="70" key="CommitChangelistDialog2/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1582548180645" />
     <state x="433" y="95" width="1278" height="1010" key="CommitChangelistDialog2/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582559799909" />
     <state x="433" y="101" key="CommitChangelistDialog2/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582106817844" />
+    <state x="798" y="460" key="ComposerInitDialogKey" timestamp="1583589589489">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="798" y="460" key="ComposerInitDialogKey/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583589589489" />
     <state width="1878" height="496" key="GridCell.Tab.0.bottom" timestamp="1581932832100">
       <screen x="0" y="0" width="1920" height="1134" />
     </state>
@@ -309,26 +364,28 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="452" y="226" key="NewModule_or_Project.wizard/0.0.1680.1050@0.0.1680.1050" timestamp="1582992458907" />
-    <state x="510" y="486" key="NewPhpClassDialog" timestamp="1582627815451">
-      <screen x="0" y="0" width="1920" height="1132" />
+    <state x="510" y="464" key="NewPhpClassDialog" timestamp="1583606506325">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="510" y="486" key="NewPhpClassDialog/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582627815451" />
     <state x="631" y="423" key="NewPhpClassDialog/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1581935207677" />
     <state x="510" y="487" key="NewPhpClassDialog/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582622585655" />
     <state x="510" y="515" key="NewPhpClassDialog/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582105119417" />
+    <state x="510" y="464" key="NewPhpClassDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583606506325" />
     <state x="781" y="530" key="NewPhpFileDialog" timestamp="1582196153488">
       <screen x="0" y="0" width="1920" height="1132" />
     </state>
     <state x="781" y="530" key="NewPhpFileDialog/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582196153488" />
-    <state x="410" y="209" key="SettingsEditor" timestamp="1582985899681">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="469" y="215" key="SettingsEditor" timestamp="1583591518693">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="410" y="209" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582985899681" />
     <state x="469" y="239" key="SettingsEditor/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582113217510" />
-    <state x="490" y="315" key="Vcs.Push.Dialog.v2" timestamp="1583061881456">
+    <state x="469" y="215" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583591518693" />
+    <state x="490" y="315" key="Vcs.Push.Dialog.v2" timestamp="1583262735075">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="490" y="315" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1583061881456" />
+    <state x="490" y="315" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1583262735075" />
     <state x="560" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582126593739" />
     <state x="560" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1582548183465" />
     <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582559808350" />
@@ -358,10 +415,11 @@
       <screen x="0" y="0" width="1920" height="1132" />
     </state>
     <state x="722" y="237" key="refactoring.ChangeSignatureDialog/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582531429329" />
-    <state x="191" y="251" width="670" height="628" key="search.everywhere.popup" timestamp="1583060960456">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="218" y="258" width="766" height="646" key="search.everywhere.popup" timestamp="1583535103504">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="191" y="251" width="670" height="628" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1583060960456" />
     <state x="218" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582623629705" />
+    <state x="218" y="258" width="766" height="646" key="search.everywhere.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583535103504" />
   </component>
 </project>
