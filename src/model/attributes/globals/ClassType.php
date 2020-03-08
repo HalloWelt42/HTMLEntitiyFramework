@@ -18,6 +18,7 @@ class ClassType extends HTMLAttribute
 
   private function set($value)
   {
+    $value = trim($value);
     $this->class_list = explode(' ', $value);
     return $this;
   }
@@ -34,8 +35,10 @@ class ClassType extends HTMLAttribute
 
   public function get_value()
   {
-    $this->attribute_value = implode(' ', $this->class_list);
-    parent::get_value();
+    $this->attribute_value = trim(
+        implode(' ', $this->class_list)
+    );
+    return parent::get_value();
   }
 
 
