@@ -316,7 +316,7 @@
     </state>
     <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1132/-1920.0.1920.1200@0.0.1920.1132" timestamp="1582635408965" />
     <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1581936940675" />
-    <state x="465" y="57" width="1273" height="994" key="CommitChangelistDialog2" timestamp="1583614360298">
+    <state x="465" y="57" width="1273" height="994" key="CommitChangelistDialog2" timestamp="1583684869067">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="668" y="73" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1583262732950" />
@@ -324,7 +324,7 @@
     <state x="258" y="70" key="CommitChangelistDialog2/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1582548180645" />
     <state x="433" y="95" width="1278" height="1010" key="CommitChangelistDialog2/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582559799909" />
     <state x="433" y="101" key="CommitChangelistDialog2/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582106817844" />
-    <state x="465" y="57" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583614360298" />
+    <state x="465" y="57" key="CommitChangelistDialog2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583684869067" />
     <state x="798" y="460" key="ComposerInitDialogKey" timestamp="1583589589489">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -412,7 +412,7 @@
     <state x="410" y="209" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582985899681" />
     <state x="469" y="239" key="SettingsEditor/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582113217510" />
     <state x="469" y="215" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583591518693" />
-    <state x="560" y="324" key="Vcs.Push.Dialog.v2" timestamp="1583614362982">
+    <state x="560" y="324" key="Vcs.Push.Dialog.v2" timestamp="1583684887050">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="490" y="315" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1583262735075" />
@@ -420,7 +420,7 @@
     <state x="560" y="339" key="Vcs.Push.Dialog.v2/0.0.1920.1133/-1920.0.1920.1200@0.0.1920.1133" timestamp="1582548183465" />
     <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1134/-1920.0.1920.1200@0.0.1920.1134" timestamp="1582559808350" />
     <state x="560" y="359" key="Vcs.Push.Dialog.v2/0.0.1920.1200/-1920.0.1920.1132@0.0.1920.1200" timestamp="1582106831262" />
-    <state x="560" y="324" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583614362982" />
+    <state x="560" y="324" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583684887050" />
     <state x="100" y="79" width="1720" height="1021" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582531340783">
       <screen x="0" y="23" width="1920" height="1109" />
     </state>
