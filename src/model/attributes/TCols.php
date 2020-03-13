@@ -11,8 +11,8 @@ trait TCols
    * @param Cols $obj
    * @return $this
    */
-    public function set_cols( Cols $obj ){
-        $this -> set_attribute($obj);
+    public function sCols( Cols $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

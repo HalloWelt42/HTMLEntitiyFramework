@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnseeked 
 {
 
-    public function set_onseeked( Onseeked $obj ){
-        $this -> set_attribute($obj);
+    public function sOnseeked( Onseeked $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

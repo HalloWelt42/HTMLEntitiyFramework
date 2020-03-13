@@ -4,8 +4,8 @@ namespace HEF\model\attributes;
 trait TNovalidate 
 {
 
-    public function set_novalidate( Novalidate $obj ){
-        $this -> set_attribute($obj);
+    public function sNovalidate( Novalidate $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

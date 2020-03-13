@@ -11,8 +11,8 @@ trait TPoster
    * @param Poster $obj
    * @return $this
    */
-    public function set_poster( Poster $obj ){
-        $this -> set_attribute($obj);
+    public function sPoster( Poster $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

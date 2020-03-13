@@ -11,8 +11,8 @@ trait THeaders
    * @param Headers $obj
    * @return $this
    */
-    public function set_headers( Headers $obj ){
-        $this -> set_attribute($obj);
+    public function sHeaders( Headers $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

@@ -4,8 +4,8 @@ namespace HEF\model\attributes\globals;
 trait TSlot 
 {
 
-    public function set_slot( Slot $obj ){
-        $this -> set_attribute($obj);
+    public function sSlot( Slot $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

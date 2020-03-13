@@ -11,8 +11,8 @@ trait TColspan
    * @param Colspan $obj
    * @return $this
    */
-    public function set_colspan( Colspan $obj ){
-        $this -> set_attribute($obj);
+    public function sColspan( Colspan $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

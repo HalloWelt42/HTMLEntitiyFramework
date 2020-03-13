@@ -11,8 +11,8 @@ trait TAutoplay
    * @param Autoplay $obj
    * @return $this
    */
-    public function set_autoplay( Autoplay $obj ){
-        $this -> set_attribute($obj);
+    public function sAutoplay( Autoplay $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

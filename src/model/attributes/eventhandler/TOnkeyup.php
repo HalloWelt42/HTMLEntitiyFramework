@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnkeyup 
 {
 
-    public function set_onkeyup( Onkeyup $obj ){
-        $this -> set_attribute($obj);
+    public function sOnkeyup( Onkeyup $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

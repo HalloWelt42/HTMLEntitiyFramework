@@ -11,8 +11,8 @@ trait TAutosave
    * @param Autosave $obj
    * @return $this
    */
-    public function set_autosave( Autosave $obj ){
-        $this -> set_attribute($obj);
+    public function sAutosave( Autosave $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

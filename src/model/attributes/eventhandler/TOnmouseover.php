@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnmouseover 
 {
 
-    public function set_onmouseover( Onmouseover $obj ){
-        $this -> set_attribute($obj);
+    public function sOnmouseover( Onmouseover $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

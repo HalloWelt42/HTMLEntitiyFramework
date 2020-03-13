@@ -11,8 +11,8 @@ trait TOptimum
    * @param Optimum $obj
    * @return $this
    */
-    public function set_optimum( Optimum $obj ){
-        $this -> set_attribute($obj);
+    public function sOptimum( Optimum $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

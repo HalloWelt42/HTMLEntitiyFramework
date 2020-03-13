@@ -16,7 +16,7 @@ class HTMLContent
     $this->set($text);
   }
 
-  public function set_nbsp(bool $val)
+  public function sNbsp(bool $val)
   {
     $this->nbsp = $val;
   }
@@ -27,14 +27,14 @@ class HTMLContent
     return $this;
   }
 
-  public function get_text()
+  public function gText()
   {
     return $this->text;
   }
 
   public function __toString()
   {
-    return (string)$this->get_text();
+    return (string)$this->gText();
   }
 
 }

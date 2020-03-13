@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnclose 
 {
 
-    public function set_onclose( Onclose $obj ){
-        $this -> set_attribute($obj);
+    public function sOnclose( Onclose $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

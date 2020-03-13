@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnmouseout 
 {
 
-    public function set_onmouseout( Onmouseout $obj ){
-        $this -> set_attribute($obj);
+    public function sOnmouseout( Onmouseout $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

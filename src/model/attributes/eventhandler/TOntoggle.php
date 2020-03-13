@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOntoggle 
 {
 
-    public function set_ontoggle( Ontoggle $obj ){
-        $this -> set_attribute($obj);
+    public function sOntoggle( Ontoggle $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

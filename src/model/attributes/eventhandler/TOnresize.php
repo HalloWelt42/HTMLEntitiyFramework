@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnresize 
 {
 
-    public function set_onresize( Onresize $obj ){
-        $this -> set_attribute($obj);
+    public function sOnresize( Onresize $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

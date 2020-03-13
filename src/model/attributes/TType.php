@@ -11,8 +11,8 @@ trait TType
    * @param Type $obj
    * @return $this
    */
-    public function set_type( Type $obj ){
-        $this -> set_attribute($obj);
+    public function sType( Type $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

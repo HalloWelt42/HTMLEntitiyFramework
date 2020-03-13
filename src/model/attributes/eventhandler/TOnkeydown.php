@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnkeydown 
 {
 
-    public function set_onkeydown( Onkeydown $obj ){
-        $this -> set_attribute($obj);
+    public function sOnkeydown( Onkeydown $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

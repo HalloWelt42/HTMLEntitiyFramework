@@ -11,8 +11,8 @@ trait TSrclang
    * @param Srclang $obj
    * @return $this
    */
-    public function set_srclang( Srclang $obj ){
-        $this -> set_attribute($obj);
+    public function sSrclang( Srclang $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

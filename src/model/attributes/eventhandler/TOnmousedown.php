@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnmousedown 
 {
 
-    public function set_onmousedown( Onmousedown $obj ){
-        $this -> set_attribute($obj);
+    public function sOnmousedown( Onmousedown $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

@@ -11,8 +11,8 @@ trait TDefer
    * @param Defer $obj
    * @return $this
    */
-    public function set_defer( Defer $obj ){
-        $this -> set_attribute($obj);
+    public function sDefer( Defer $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

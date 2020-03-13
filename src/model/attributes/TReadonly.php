@@ -11,8 +11,8 @@ trait TReadonly
    * @param Readonly $obj
    * @return $this
    */
-    public function set_readonly( Readonly $obj ){
-        $this -> set_attribute($obj);
+    public function sReadonly( Readonly $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

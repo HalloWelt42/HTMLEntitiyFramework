@@ -11,8 +11,8 @@ trait TRows
    * @param Rows $obj
    * @return $this
    */
-    public function set_rows( Rows $obj ){
-        $this -> set_attribute($obj);
+    public function sRows( Rows $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnclick 
 {
 
-    public function set_onclick( Onclick $obj ){
-        $this -> set_attribute($obj);
+    public function sOnclick( Onclick $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

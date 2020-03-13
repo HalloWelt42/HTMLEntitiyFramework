@@ -11,8 +11,8 @@ trait TScope
    * @param Scope $obj
    * @return $this
    */
-    public function set_scope( Scope $obj ){
-        $this -> set_attribute($obj);
+    public function sScope( Scope $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

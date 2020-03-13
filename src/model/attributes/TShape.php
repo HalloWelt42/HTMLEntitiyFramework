@@ -11,8 +11,8 @@ trait TShape
    * @param Shape $obj
    * @return $this
    */
-    public function set_shape( Shape $obj ){
-        $this -> set_attribute($obj);
+    public function sShape( Shape $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

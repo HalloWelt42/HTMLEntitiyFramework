@@ -16,15 +16,15 @@ class HTMLAttribute
    */
   protected $attribute_value;
 
-  public function get_value(){
+  public function gValue(){
       return $this->attribute_value;
   }
 
-  public function get_attribute_name(){
+  public function gAttributeName(){
       return $this->attribute_name;
   }
 
-  public function set_value( $value ){
+  public function sValue( $value ){
       $this->attribute_value=$value;
       return $this;
   }

@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnloadeddata 
 {
 
-    public function set_onloadeddata( Onloadeddata $obj ){
-        $this -> set_attribute($obj);
+    public function sOnloadeddata( Onloadeddata $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

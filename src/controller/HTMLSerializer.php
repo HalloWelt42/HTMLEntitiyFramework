@@ -49,7 +49,7 @@ class HTMLSerializer
     $this->dom->appendChild(
         $this->parser(
             $this->html_obj,
-            $this->dom->createElement($this->html_obj->get_element_name())
+            $this->dom->createElement($this->html_obj->gElementName())
         )
     );
 
@@ -64,18 +64,17 @@ class HTMLSerializer
    */
   public function parser(HTMLElement $html_element, DOMElement $node)
   {
-
-    if ($html_element->get_elements()) {
+    if ($html_element->gElements()) {
       /**
        * @var $child_element HTMLElement
        */
-      foreach ($html_element->get_elements() as $child_element) {
+      foreach ($html_element->gElements() as $child_element) {
 
-        if ($child_element->get_element_name() === 'text') {
+        if ($child_element->gElementName() === 'text') {
 
           $node->appendChild(
               $this->dom->createTextNode(
-                  $child_element->get_text()
+                  $child_element->gText()
               )
           );
 
@@ -85,7 +84,7 @@ class HTMLSerializer
               $this->parser(
                   $child_element,
                   $this->dom->createElement(
-                      $child_element->get_element_name()
+                      $child_element->gElementName()
                   )
               )
           );
@@ -95,15 +94,15 @@ class HTMLSerializer
     }
 
 
-    if ($html_element->get_attributes()) {
+    if ($html_element->gAttributes()) {
       /**
        * @var $html_attibute HTMLAttribute
        */
-      foreach ($html_element->get_attributes() as $html_attibute) {
-        // TODO : Inhalt ggf prüfen. Vermeidung leerer Attribute : $html_attibute -> get_value()
+      foreach ($html_element->gAttributes() as $html_attibute) {
+        // TODO : Inhalt ggf prüfen. Vermeidung leerer Attribute : $html_attibute -> gValue()
 
-        $attibute = $this->dom->createAttribute($html_attibute->get_attribute_name());
-        $attibute->value = $html_attibute->get_value();
+        $attibute = $this->dom->createAttribute($html_attibute->gAttributeName());
+        $attibute->value = $html_attibute->gValue();
         $node->appendChild($attibute);
       }
     }

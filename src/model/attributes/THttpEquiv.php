@@ -6,8 +6,8 @@ namespace HEF\model\attributes;
 trait THttpEquiv
 {
 
-    public function set_http_equiv( HttpEquiv $obj ){
-        $this -> set_attribute($obj);
+    public function sHttp_equiv( HttpEquiv $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

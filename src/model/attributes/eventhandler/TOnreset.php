@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnreset 
 {
 
-    public function set_onreset( Onreset $obj ){
-        $this -> set_attribute($obj);
+    public function sOnreset( Onreset $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

@@ -29,7 +29,7 @@ class HTMLElement
   protected $html_text;
 
 
-  public function add_htmlelement(HTMLElement $element)
+  public function addElement(HTMLElement $element)
   {
     $this->html_elements[] = $element;
 
@@ -44,7 +44,7 @@ class HTMLElement
    *
    * @return $this
    */
-  public function set_htmlelements(HTMLElements $elements)
+  public function sHtmlElements(HTMLElements $elements)
   {
     $this->html_elements = $elements;
 
@@ -54,7 +54,7 @@ class HTMLElement
   /**
    * @return string
    */
-  public function get_element_name()
+  public function gElementName()
   {
     return $this->element_name;
   }
@@ -62,7 +62,7 @@ class HTMLElement
   /**
    * @return HTMLAttributes
    */
-  public function get_attributes()
+  public function gAttributes()
   {
     return $this->html_attributes;
   }
@@ -70,7 +70,7 @@ class HTMLElement
   /**
    * @return HTMLElements
    */
-  public function get_elements()
+  public function gElements()
   {
     return $this->html_elements;
   }
@@ -79,13 +79,13 @@ class HTMLElement
    * @param HTMLContent $obj
    * @return $this
    */
-  protected function set_text(HTMLContent $obj )
+  protected function sText(HTMLContent $obj )
   {
-    $this -> html_text = $obj -> get_text();
+    $this -> html_text = $obj -> gText();
     return $this;
   }
 
-  public function get_text(){
+  public function gText(){
     return $this -> html_text;
   }
 
@@ -95,9 +95,9 @@ class HTMLElement
   /**
    * @param HTMLAttribute $attribut_obj
    */
-  protected function set_attribute(HTMLAttribute $attribut_obj)
+  protected function sAttribute(HTMLAttribute $attribut_obj)
   {
-    $this->html_attributes[$attribut_obj->get_attribute_name()] = $attribut_obj;
+    $this->html_attributes[$attribut_obj->gAttributeName()] = $attribut_obj;
   }
 
 }

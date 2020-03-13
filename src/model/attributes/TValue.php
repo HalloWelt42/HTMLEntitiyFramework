@@ -11,8 +11,8 @@ trait TValue
    * @param Value $obj
    * @return $this
    */
-    public function set_value( Value $obj ){
-        $this -> set_attribute($obj);
+    public function sValue( Value $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

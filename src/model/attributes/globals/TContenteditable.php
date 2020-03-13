@@ -4,8 +4,8 @@ namespace HEF\model\attributes\globals;
 trait TContenteditable 
 {
 
-    public function set_contenteditable( Contenteditable $obj ){
-        $this -> set_attribute($obj);
+    public function sContenteditable( Contenteditable $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

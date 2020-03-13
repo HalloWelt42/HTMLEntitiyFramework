@@ -11,8 +11,8 @@ trait TPing
    * @param Ping $obj
    * @return $this
    */
-    public function set_ping( Ping $obj ){
-        $this -> set_attribute($obj);
+    public function sPing( Ping $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

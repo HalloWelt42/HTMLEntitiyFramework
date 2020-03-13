@@ -14,31 +14,31 @@ class TestHTMLAttrClasses extends TestCase
    */
   public function test_classes(){
 
-    $this->assertEquals('def',$this->get_classes('def'));
-    $this->assertEquals('def',$this->get_classes(' def'));
-    $this->assertEquals('def',$this->get_classes(' def '));
-    $this->assertEquals('abc def',$this->get_classes('abc def'));
-    $this->assertEquals('abc def',$this->get_classes(' abc def '));
-    $this->assertEquals('abc def',$this->get_classes('   abc def '));
+    $this->assertEquals('def',$this->gClasses('def'));
+    $this->assertEquals('def',$this->gClasses(' def'));
+    $this->assertEquals('def',$this->gClasses(' def '));
+    $this->assertEquals('abc def',$this->gClasses('abc def'));
+    $this->assertEquals('abc def',$this->gClasses(' abc def '));
+    $this->assertEquals('abc def',$this->gClasses('   abc def '));
 
-    $this->assertEquals('ab bc' , $this->get_classes_by_setter(['ab','bc']));
-    $this->assertEquals('bc' , $this->get_classes_by_setter(['bc']));
-    $this->assertEquals('ab' , $this->get_classes_by_setter([' ',' ab ']));
+    $this->assertEquals('ab bc' , $this->gClassesBySetter(['ab','bc']));
+    $this->assertEquals('bc' , $this->gClassesBySetter(['bc']));
+    $this->assertEquals('ab' , $this->gClassesBySetter([' ',' ab ']));
 
   }
 
-  private function get_classes($str){
+  private function gClasses($str){
     return (new ClassType(
         $str
-    ))->get_value();
+    ))->gValue();
   }
 
-  private function get_classes_by_setter($arr){
+  private function gClassesBySetter($arr){
     $cls = (new ClassType());
     foreach ($arr as $val ){
       $cls->add($val);
     }
-    return $cls->get_value();
+    return $cls->gValue();
   }
 
 }

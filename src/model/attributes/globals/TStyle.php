@@ -4,8 +4,8 @@ namespace HEF\model\attributes\globals;
 trait TStyle 
 {
 
-    public function set_style( Style $obj ){
-        $this -> set_attribute($obj);
+    public function sStyle( Style $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

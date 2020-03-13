@@ -11,8 +11,8 @@ trait TReversed
    * @param Reversed $obj
    * @return $this
    */
-    public function set_reversed( Reversed $obj ){
-        $this -> set_attribute($obj);
+    public function sReversed( Reversed $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

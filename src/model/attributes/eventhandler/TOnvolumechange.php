@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnvolumechange 
 {
 
-    public function set_onvolumechange( Onvolumechange $obj ){
-        $this -> set_attribute($obj);
+    public function sOnvolumechange( Onvolumechange $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

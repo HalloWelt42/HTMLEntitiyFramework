@@ -81,7 +81,7 @@ class PHPCodeGeneratorAttribute
 
     $this->html_element='menu';
 
-    $this->load_mozilla_attributlist([
+    $this->loadMozillaAttributList([
            $this->html_element
             #'Globale Attribute' , 'Globales Attribut' , 'Globale Attribut' , 'Global attribute'
         ]
@@ -94,20 +94,20 @@ class PHPCodeGeneratorAttribute
     #exit;
 
 
-    $this->render_attribute_list();
+    $this->renderAttributeList();
   }
 
-  private function render_attribute_list()
+  private function renderAttributeList()
   {
     if($this->attributes){
       foreach ($this->attributes as $this->attribute_name) {
-        $this->save_file_when_exists($this->target_dir_name_traits . $this->get_trait_filename(), $this->get_phpcode_attribute_trait());
-        $this->save_file_when_exists($this->target_dir_name_class . $this->get_class_filename(), $this->get_phpcode_attribute_class());
-        $this->add_short_trait();
-        $this->add_use_class();
+        $this->saveFileWhenExists($this->target_dir_name_traits . $this->gTraitFileName(), $this->gPhpCodeAttributeTrait());
+        $this->saveFileWhenExists($this->target_dir_name_class . $this->gClassFileName(), $this->gPhpCodeAttributeClass());
+        $this->addShortTrait();
+        $this->addUseClass();
       }
-      $this->save_file_when_exists("{$this->main_dir}T{$this->get_classname_html()}Attributes.php", $this->get_phpcode_attributset_trait());
-      $this->save_file_when_exists("{$this->main_dir}{$this->get_classname_html()}.php", $this->get_phpcode_htmlelements_class());
+      $this->saveFileWhenExists("{$this->main_dir}T{$this->gClassnameHtml()}Attributes.php", $this->gPhpCodeAttributsetTrait());
+      $this->saveFileWhenExists("{$this->main_dir}{$this->gClassnameHtml()}.php", $this->gPhpCodeHtmlElementsClass());
     }
   }
 
@@ -115,7 +115,7 @@ class PHPCodeGeneratorAttribute
    * @param $file
    * @param $source
    */
-  private function save_file_when_exists($file,$source){
+  private function saveFileWhenExists($file, $source){
 
     if( file_exists($file) ){
       print_r($file . ' not saved!'.PHP_EOL);
@@ -125,24 +125,24 @@ class PHPCodeGeneratorAttribute
     file_put_contents($file,$source);
   }
 
-  private function get_phpcode_attribute_trait()
+  private function gPhpCodeAttributeTrait()
   {
     return <<<TRAIT
 <?php
 namespace HEF\\model\\attributes;
 
-trait {$this->get_traitname()} 
+trait {$this->gTraitname()} 
 {
 
   /**
    * 
    * 
    * 
-   * @param {$this->get_classname()} \$obj
+   * @param {$this->gClassname()} \$obj
    * @return \$this
    */
-    public function set_{$this->get_functionname()}( {$this->get_classname()} \$obj ){
-        \$this -> set_attribute(\$obj);
+    public function set_{$this->gFunctionname()}( {$this->gClassname()} \$obj ){
+        \$this -> sAttribute(\$obj);
         return \$this;
     }
 
@@ -151,7 +151,7 @@ trait {$this->get_traitname()}
 TRAIT;
   }
 
-  private function get_phpcode_attribute_class()
+  private function gPhpCodeAttributeClass()
   {
     return <<<CLASS
 <?php
@@ -159,7 +159,7 @@ namespace HEF\\model\\attributes;
 
 use HEF\model\HTMLAttribute;
 
-class {$this->get_classname()} extends HTMLAttribute
+class {$this->gClassname()} extends HTMLAttribute
 {
 
   /**
@@ -170,7 +170,7 @@ class {$this->get_classname()} extends HTMLAttribute
    */
   public function __construct ( \$value = NULL )
   {
-      \$this->attribute_name = '{$this->get_attribute_name()}';
+      \$this->attribute_name = '{$this->gAttributeName()}';
       \$this->attribute_value = \$value;
 
   }
@@ -180,7 +180,7 @@ class {$this->get_classname()} extends HTMLAttribute
 CLASS;
   }
 
-  private function get_phpcode_attributset_trait()
+  private function gPhpCodeAttributsetTrait()
   {
     return <<<TRAIT
 <?php
@@ -189,7 +189,7 @@ namespace HEF\model\attributesets;
 
 {$this->list_long_trait}
 
-trait T{$this->get_classname_html()}Attributes
+trait T{$this->gClassnameHtml()}Attributes
 {
 {$this->list_short_trait}
 }
@@ -197,7 +197,7 @@ TRAIT;
 
   }
 
-  private function get_phpcode_htmlelements_class()
+  private function gPhpCodeHtmlElementsClass()
   {
     return <<<CLASS
 <?php
@@ -205,17 +205,17 @@ namespace HEF\\model\\htmlelements;
 
 use HEF\\model\\attributesets\\TGlobalAttributes;
 use HEF\\model\\attributesets\\TEventHandlerAttributes;
-use HEF\\model\\attributesets\\T{$this->get_classname_html()}Attributes;
+use HEF\\model\\attributesets\\T{$this->gClassnameHtml()}Attributes;
 use HEF\\model\\HTMLElement;
 use HEF\\model\\HTMLElements;
 
-class {$this->get_classname_html()} extends HTMLElement
+class {$this->gClassnameHtml()} extends HTMLElement
 {
 
   use TGlobalAttributes;
   use TEventHandlerAttributes;
 
-  use T{$this->get_classname_html()}Attributes;
+  use T{$this->gClassnameHtml()}Attributes;
 
   public function __construct(HTMLElements \$html_elements = null)
   {
@@ -229,21 +229,21 @@ CLASS;
 
   }
 
-  private function is_reserved_keyword(){
+  private function isReservedKeyword(){
       if( in_array($this->attribute_name,$this->reserved_keywords) ){
         return true;
     }
     return false;
   }
 
-  private function add_short_trait()
+  private function addShortTrait()
   {
-    $this->list_short_trait .= "    use {$this -> get_traitname()};" . PHP_EOL;
+    $this->list_short_trait .= "    use {$this -> gTraitname()};" . PHP_EOL;
   }
 
-  private function add_use_class()
+  private function addUseClass()
   {
-    $this->list_long_trait .= "use HEF\\model\\attributes\\{$this->get_traitname()};" . PHP_EOL;
+    $this->list_long_trait .= "use HEF\\model\\attributes\\{$this->gTraitname()};" . PHP_EOL;
   }
 
   private function output_on_screen()
@@ -258,7 +258,7 @@ CLASS;
   /**
    * @param array $html_elements
    */
-  private function load_mozilla_attributlist(array $html_elements)
+  private function loadMozillaAttributList(array $html_elements)
   {
 
     $this->attributes = [];
@@ -280,46 +280,46 @@ CLASS;
     }
   }
 
-  private function get_traitname()
+  private function gTraitname()
   {
-    return 'T' . $this->get_classname();
+    return 'T' . $this->gClassname();
 
   }
 
-  private function get_functionname()
+  private function gFunctionname()
   {
     return implode('_', array_map(function ($item) {
       return mb_strtolower($item);
     }, explode('-', $this->attribute_name)));
   }
 
-  private function get_classname()
+  private function gClassname()
   {
     return
         implode('', array_map(function ($item) {
           return ucfirst($item);
           }, explode('-', $this->attribute_name))
-        ).($this -> is_reserved_keyword() ? 'Type':'');
+        ).($this -> isReservedKeyword() ? 'Type':'');
   }
 
 
-  private function get_classname_html(){
+  private function gClassnameHtml(){
     return ucfirst( $this->html_element );
   }
 
-  private function get_trait_filename()
+  private function gTraitFileName()
   {
-    return $this->get_traitname() . '.php';
+    return $this->gTraitname() . '.php';
   }
 
-  private function get_attribute_name()
+  private function gAttributeName()
   {
     return $this->attribute_name;
   }
 
-  private function get_class_filename()
+  private function gClassFileName()
   {
-    return $this->get_classname() . '.php';
+    return $this->gClassname() . '.php';
   }
 
 

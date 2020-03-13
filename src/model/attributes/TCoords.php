@@ -11,8 +11,8 @@ trait TCoords
    * @param Coords $obj
    * @return $this
    */
-    public function set_coords( Coords $obj ){
-        $this -> set_attribute($obj);
+    public function sCoords( Coords $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

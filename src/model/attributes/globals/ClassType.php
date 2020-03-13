@@ -33,12 +33,12 @@ class ClassType extends HTMLAttribute
     return $this;
   }
 
-  public function get_value()
+  public function gValue()
   {
     $this->attribute_value = trim(
         implode(' ', $this->class_list)
     );
-    return parent::get_value();
+    return parent::gValue();
   }
 
 

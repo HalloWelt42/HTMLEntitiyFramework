@@ -11,8 +11,8 @@ trait TOpen
    * @param Open $obj
    * @return $this
    */
-    public function set_open( Open $obj ){
-        $this -> set_attribute($obj);
+    public function sOpen( Open $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

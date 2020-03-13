@@ -11,8 +11,8 @@ trait TAutofocus
    * @param Autofocus $obj
    * @return $this
    */
-    public function set_autofocus( Autofocus $obj ){
-        $this -> set_attribute($obj);
+    public function sAutofocus( Autofocus $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

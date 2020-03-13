@@ -11,8 +11,8 @@ trait TBgcolor
    * @param Bgcolor $obj
    * @return $this
    */
-    public function set_bgcolor( Bgcolor $obj ){
-        $this -> set_attribute($obj);
+    public function sBgcolor( Bgcolor $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

@@ -4,8 +4,8 @@ namespace HEF\model\attributes\globals;
 trait TItemprop 
 {
 
-    public function set_itemprop( Itemprop $obj ){
-        $this -> set_attribute($obj);
+    public function sItemprop( Itemprop $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

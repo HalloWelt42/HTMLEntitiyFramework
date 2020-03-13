@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnmouseleave 
 {
 
-    public function set_onmouseleave( Onmouseleave $obj ){
-        $this -> set_attribute($obj);
+    public function sOnmouseleave( Onmouseleave $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

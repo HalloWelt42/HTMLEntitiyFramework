@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOndragenter 
 {
 
-    public function set_ondragenter( Ondragenter $obj ){
-        $this -> set_attribute($obj);
+    public function sOndragenter( Ondragenter $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

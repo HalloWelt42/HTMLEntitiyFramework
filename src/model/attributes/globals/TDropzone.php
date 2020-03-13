@@ -4,8 +4,8 @@ namespace HEF\model\attributes\globals;
 trait TDropzone 
 {
 
-    public function set_dropzone( Dropzone $obj ){
-        $this -> set_attribute($obj);
+    public function sDropzone( Dropzone $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

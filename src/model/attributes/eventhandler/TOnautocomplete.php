@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnautocomplete 
 {
 
-    public function set_onautocomplete( Onautocomplete $obj ){
-        $this -> set_attribute($obj);
+    public function sOnautocomplete( Onautocomplete $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

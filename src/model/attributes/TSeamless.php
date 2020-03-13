@@ -11,8 +11,8 @@ trait TSeamless
    * @param Seamless $obj
    * @return $this
    */
-    public function set_seamless( Seamless $obj ){
-        $this -> set_attribute($obj);
+    public function sSeamless( Seamless $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

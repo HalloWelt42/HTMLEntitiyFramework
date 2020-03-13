@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOndrag 
 {
 
-    public function set_ondrag( Ondrag $obj ){
-        $this -> set_attribute($obj);
+    public function sOndrag( Ondrag $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

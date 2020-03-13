@@ -5,8 +5,8 @@ namespace HEF\model\attributes;
 trait TName 
 {
 
-    public function set_name( Name $obj ){
-        $this -> set_attribute($obj);
+    public function sName( Name $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

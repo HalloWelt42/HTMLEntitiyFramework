@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnshow 
 {
 
-    public function set_onshow( Onshow $obj ){
-        $this -> set_attribute($obj);
+    public function sOnshow( Onshow $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

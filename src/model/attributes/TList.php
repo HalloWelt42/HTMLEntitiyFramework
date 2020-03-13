@@ -11,8 +11,8 @@ trait TList
    * @param ListType $obj
    * @return $this
    */
-    public function set_list( ListType $obj ){
-        $this -> set_attribute($obj);
+    public function sList( ListType $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

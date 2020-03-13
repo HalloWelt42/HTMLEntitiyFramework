@@ -11,8 +11,8 @@ trait TLanguage
    * @param Language $obj
    * @return $this
    */
-    public function set_language( Language $obj ){
-        $this -> set_attribute($obj);
+    public function sLanguage( Language $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

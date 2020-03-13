@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnmousewheel 
 {
 
-    public function set_onmousewheel( Onmousewheel $obj ){
-        $this -> set_attribute($obj);
+    public function sOnmousewheel( Onmousewheel $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

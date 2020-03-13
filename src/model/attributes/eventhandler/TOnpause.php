@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnpause 
 {
 
-    public function set_onpause( Onpause $obj ){
-        $this -> set_attribute($obj);
+    public function sOnpause( Onpause $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

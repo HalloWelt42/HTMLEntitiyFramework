@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOninput 
 {
 
-    public function set_oninput( Oninput $obj ){
-        $this -> set_attribute($obj);
+    public function sOninput( Oninput $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

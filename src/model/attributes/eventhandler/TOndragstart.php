@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOndragstart 
 {
 
-    public function set_ondragstart( Ondragstart $obj ){
-        $this -> set_attribute($obj);
+    public function sOndragstart( Ondragstart $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

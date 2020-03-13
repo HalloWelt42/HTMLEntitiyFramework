@@ -11,8 +11,8 @@ trait TIntegrity
    * @param Integrity $obj
    * @return $this
    */
-    public function set_integrity( Integrity $obj ){
-        $this -> set_attribute($obj);
+    public function sIntegrity( Integrity $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

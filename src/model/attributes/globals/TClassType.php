@@ -6,8 +6,8 @@ use HEF\model\attributes\globals\ClassType;
 trait TClassType
 {
 
-    public function set_class( ClassType $obj ){
-        $this -> set_attribute($obj);
+    public function sClass( ClassType $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

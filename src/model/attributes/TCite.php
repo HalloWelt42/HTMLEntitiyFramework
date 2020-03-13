@@ -11,8 +11,8 @@ trait TCite
    * @param Cite $obj
    * @return $this
    */
-    public function set_cite( Cite $obj ){
-        $this -> set_attribute($obj);
+    public function sCite( Cite $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

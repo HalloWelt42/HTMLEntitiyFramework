@@ -36,10 +36,10 @@ abstract class EnumBaseAbstract {
   public static function getConstants() {
 
     self::$const_cache_array = self::$const_cache_array !== NULL ?: [];
-    if ( !array_key_exists( get_called_class() , self::$const_cache_array ) ) {
-      self::$const_cache_array[ get_called_class() ] = (new ReflectionClass( get_called_class() )) -> getConstants();
+    if ( !array_key_exists( gCalled_class() , self::$const_cache_array ) ) {
+      self::$const_cache_array[ gCalled_class() ] = (new ReflectionClass( gCalled_class() )) -> getConstants();
     }
-    return self::$const_cache_array[ get_called_class() ];
+    return self::$const_cache_array[ gCalled_class() ];
   }
 
 

@@ -11,8 +11,8 @@ trait TMedia
    * @param Media $obj
    * @return $this
    */
-    public function set_media( Media $obj ){
-        $this -> set_attribute($obj);
+    public function sMedia( Media $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

@@ -12,8 +12,8 @@ trait THref
      */
     private $href;
 
-  public function set_href( Href $obj ){
-    $this -> set_attribute($obj);
+  public function sHref( Href $obj ){
+    $this -> sAttribute($obj);
     return $this;
   }
 

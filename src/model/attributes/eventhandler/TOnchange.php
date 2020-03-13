@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnchange 
 {
 
-    public function set_onchange( Onchange $obj ){
-        $this -> set_attribute($obj);
+    public function sOnchange( Onchange $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

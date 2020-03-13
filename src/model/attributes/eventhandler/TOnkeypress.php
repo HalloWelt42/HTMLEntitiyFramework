@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnkeypress 
 {
 
-    public function set_onkeypress( Onkeypress $obj ){
-        $this -> set_attribute($obj);
+    public function sOnkeypress( Onkeypress $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

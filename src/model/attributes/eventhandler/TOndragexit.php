@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOndragexit 
 {
 
-    public function set_ondragexit( Ondragexit $obj ){
-        $this -> set_attribute($obj);
+    public function sOndragexit( Ondragexit $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

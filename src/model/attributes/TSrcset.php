@@ -11,8 +11,8 @@ trait TSrcset
    * @param Srcset $obj
    * @return $this
    */
-    public function set_srcset( Srcset $obj ){
-        $this -> set_attribute($obj);
+    public function sSrcset( Srcset $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

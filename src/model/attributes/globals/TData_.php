@@ -6,7 +6,7 @@ namespace HEF\model\attributes\globals;
 
 trait TData_
 {
-  public function set_data_(Data_ $obj ){
+  public function sData_(Data_ $obj ){
     $this->set_attribute( $obj );
     return $this;
   }

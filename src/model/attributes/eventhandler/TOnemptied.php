@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnemptied 
 {
 
-    public function set_onemptied( Onemptied $obj ){
-        $this -> set_attribute($obj);
+    public function sOnemptied( Onemptied $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

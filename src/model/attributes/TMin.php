@@ -11,8 +11,8 @@ trait TMin
    * @param Min $obj
    * @return $this
    */
-    public function set_min( Min $obj ){
-        $this -> set_attribute($obj);
+    public function sMin( Min $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

@@ -11,8 +11,8 @@ trait TAccept
    * @param Accept $obj
    * @return $this
    */
-    public function set_accept( Accept $obj ){
-        $this -> set_attribute($obj);
+    public function sAccept( Accept $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

@@ -11,8 +11,8 @@ trait TKeytype
    * @param Keytype $obj
    * @return $this
    */
-    public function set_keytype( Keytype $obj ){
-        $this -> set_attribute($obj);
+    public function sKeytype( Keytype $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

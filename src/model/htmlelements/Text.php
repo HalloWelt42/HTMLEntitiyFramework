@@ -18,7 +18,7 @@ class Text extends HTMLElement
   public function __construct( HTMLContent $obj = null )
   {
     $this->element_name = 'text';
-    $this->set_text(($obj===null ? new HTMLContent('') : $obj ) );
+    $this->sText(($obj===null ? new HTMLContent('') : $obj ) );
     $this->html_elements =  null;
   }
 

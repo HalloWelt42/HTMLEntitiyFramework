@@ -11,8 +11,8 @@ trait TPreload
    * @param Preload $obj
    * @return $this
    */
-    public function set_preload( Preload $obj ){
-        $this -> set_attribute($obj);
+    public function sPreload( Preload $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

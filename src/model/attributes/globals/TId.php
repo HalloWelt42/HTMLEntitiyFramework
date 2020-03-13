@@ -4,8 +4,8 @@ namespace HEF\model\attributes\globals;
 trait TId 
 {
 
-    public function set_id( Id $obj ){
-        $this -> set_attribute($obj);
+    public function sId( Id $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

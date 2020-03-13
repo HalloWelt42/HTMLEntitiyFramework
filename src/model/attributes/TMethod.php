@@ -4,8 +4,8 @@ namespace HEF\model\attributes;
 trait TMethod 
 {
 
-    public function set_method( Method $obj ){
-        $this -> set_attribute($obj);
+    public function sMethod( Method $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

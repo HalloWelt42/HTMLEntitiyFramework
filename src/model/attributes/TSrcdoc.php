@@ -11,8 +11,8 @@ trait TSrcdoc
    * @param Srcdoc $obj
    * @return $this
    */
-    public function set_srcdoc( Srcdoc $obj ){
-        $this -> set_attribute($obj);
+    public function sSrcdoc( Srcdoc $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

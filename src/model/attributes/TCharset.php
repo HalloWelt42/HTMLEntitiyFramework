@@ -12,9 +12,9 @@ trait TCharset
      *
      * @return $this
      */
-    public function set_charset ( Charset $obj )
+    public function sCharset (Charset $obj )
     {
-        $this -> set_attribute($obj);
+        $this -> sAttribute($obj);
         return $this;
     }
 

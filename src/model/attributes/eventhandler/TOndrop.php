@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOndrop 
 {
 
-    public function set_ondrop( Ondrop $obj ){
-        $this -> set_attribute($obj);
+    public function sOndrop( Ondrop $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

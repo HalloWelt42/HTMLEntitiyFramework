@@ -11,8 +11,8 @@ trait TColor
    * @param Color $obj
    * @return $this
    */
-    public function set_color( Color $obj ){
-        $this -> set_attribute($obj);
+    public function sColor( Color $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

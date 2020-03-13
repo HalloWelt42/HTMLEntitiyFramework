@@ -11,8 +11,8 @@ trait TSize
    * @param Size $obj
    * @return $this
    */
-    public function set_size( Size $obj ){
-        $this -> set_attribute($obj);
+    public function sSize( Size $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

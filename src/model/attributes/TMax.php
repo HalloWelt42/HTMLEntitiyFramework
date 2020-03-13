@@ -11,8 +11,8 @@ trait TMax
    * @param Max $obj
    * @return $this
    */
-    public function set_max( Max $obj ){
-        $this -> set_attribute($obj);
+    public function sMax( Max $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

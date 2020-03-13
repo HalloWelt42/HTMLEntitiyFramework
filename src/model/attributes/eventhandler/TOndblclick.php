@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOndblclick 
 {
 
-    public function set_ondblclick( Ondblclick $obj ){
-        $this -> set_attribute($obj);
+    public function sOndblclick( Ondblclick $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

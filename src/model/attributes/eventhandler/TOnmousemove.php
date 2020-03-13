@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnmousemove 
 {
 
-    public function set_onmousemove( Onmousemove $obj ){
-        $this -> set_attribute($obj);
+    public function sOnmousemove( Onmousemove $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

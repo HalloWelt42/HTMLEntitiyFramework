@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnplay 
 {
 
-    public function set_onplay( Onplay $obj ){
-        $this -> set_attribute($obj);
+    public function sOnplay( Onplay $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnended 
 {
 
-    public function set_onended( Onended $obj ){
-        $this -> set_attribute($obj);
+    public function sOnended( Onended $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

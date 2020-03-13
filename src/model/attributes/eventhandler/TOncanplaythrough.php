@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOncanplaythrough 
 {
 
-    public function set_oncanplaythrough( Oncanplaythrough $obj ){
-        $this -> set_attribute($obj);
+    public function sOncanplaythrough( Oncanplaythrough $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

@@ -11,8 +11,8 @@ trait TStep
    * @param Step $obj
    * @return $this
    */
-    public function set_step( Step $obj ){
-        $this -> set_attribute($obj);
+    public function sStep( Step $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

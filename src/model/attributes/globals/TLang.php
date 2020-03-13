@@ -4,8 +4,8 @@ namespace HEF\model\attributes\globals;
 trait TLang 
 {
 
-    public function set_lang( Lang $obj ){
-        $this -> set_attribute($obj);
+    public function sLang( Lang $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

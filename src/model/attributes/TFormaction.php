@@ -11,8 +11,8 @@ trait TFormaction
    * @param Formaction $obj
    * @return $this
    */
-    public function set_formaction( Formaction $obj ){
-        $this -> set_attribute($obj);
+    public function sFormaction( Formaction $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

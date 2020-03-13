@@ -4,8 +4,8 @@ namespace HEF\model\attributes;
 trait TEnctype 
 {
 
-    public function set_enctype( Enctype $obj ){
-        $this -> set_attribute($obj);
+    public function sEnctype( Enctype $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

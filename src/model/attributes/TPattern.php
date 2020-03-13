@@ -11,8 +11,8 @@ trait TPattern
    * @param Pattern $obj
    * @return $this
    */
-    public function set_pattern( Pattern $obj ){
-        $this -> set_attribute($obj);
+    public function sPattern( Pattern $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

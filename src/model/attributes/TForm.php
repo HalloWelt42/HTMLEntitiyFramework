@@ -11,8 +11,8 @@ trait TForm
    * @param Form $obj
    * @return $this
    */
-    public function set_form( Form $obj ){
-        $this -> set_attribute($obj);
+    public function sForm( Form $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

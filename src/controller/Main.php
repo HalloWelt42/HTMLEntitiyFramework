@@ -30,48 +30,48 @@ class Main
 
     $html_obj = (new Html)
 
-        ->add_htmlelement(
+        ->addElement(
             (new Head)
 
-                ->add_htmlelement(
-                    (new Title)->add_htmlelement(
+                ->addElement(
+                    (new Title)->addElement(
                         new Text(new HTMLContent('Titel-Überschrift'))
                     )
                 )
-                ->add_htmlelement(
-                    (new NoScript)->add_htmlelement(
+                ->addElement(
+                    (new NoScript)->addElement(
                         new Text(new HTMLContent('Kein JS eingeschaltet'))
                     )
         )
 
-                ->add_htmlelement(
-                    (new Meta)->set_charset(new Charset(EnumCharset::UTF8))
+                ->addElement(
+                    (new Meta)->sCharset(new Charset(EnumCharset::UTF8))
                 )
 
-                ->add_htmlelement(
-                    (new Script)->set_src(new Src('sr.js'))
+                ->addElement(
+                    (new Script)->sSrc(new Src('sr.js'))
                 )
 
 
         )
 
-        ->add_htmlelement(
+        ->addElement(
             (new Body)
 
-                ->add_htmlelement(
+                ->addElement(
                     (new Text(new HTMLContent(' text ')))
                 )
 
-                ->add_htmlelement(
-                (new Form())->set_action(new Action('?'))
-                    ->add_htmlelement(
-                        (new Input())->set_type(new Type('text'))
+                ->addElement(
+                (new Form())->sAction(new Action('?'))
+                    ->addElement(
+                        (new Input())->sType(new Type('text'))
                     )
                 )
 
-                ->add_htmlelement((new Address)
-                        ->set_id(new Id('pp'))
-                    ->set_class(new ClassType('foo bar'))
+                ->addElement((new Address)
+                        ->sId(new Id('pp'))
+                    ->sClass(new ClassType('foo bar'))
                 )
 
         );

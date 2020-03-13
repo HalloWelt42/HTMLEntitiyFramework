@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnmouseup 
 {
 
-    public function set_onmouseup( Onmouseup $obj ){
-        $this -> set_attribute($obj);
+    public function sOnmouseup( Onmouseup $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

@@ -4,8 +4,8 @@ namespace HEF\model\attributes\globals;
 trait THidden 
 {
 
-    public function set_hidden( Hidden $obj ){
-        $this -> set_attribute($obj);
+    public function sHidden( Hidden $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

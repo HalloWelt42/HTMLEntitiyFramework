@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOnprogress 
 {
 
-    public function set_onprogress( Onprogress $obj ){
-        $this -> set_attribute($obj);
+    public function sOnprogress( Onprogress $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

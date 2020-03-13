@@ -11,8 +11,8 @@ trait TLow
    * @param Low $obj
    * @return $this
    */
-    public function set_low( Low $obj ){
-        $this -> set_attribute($obj);
+    public function sLow( Low $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

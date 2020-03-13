@@ -11,8 +11,8 @@ trait TKind
    * @param Kind $obj
    * @return $this
    */
-    public function set_kind( Kind $obj ){
-        $this -> set_attribute($obj);
+    public function sKind( Kind $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

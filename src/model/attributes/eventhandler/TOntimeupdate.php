@@ -4,8 +4,8 @@ namespace HEF\model\attributes\eventhandler;
 trait TOntimeupdate 
 {
 
-    public function set_ontimeupdate( Ontimeupdate $obj ){
-        $this -> set_attribute($obj);
+    public function sOntimeupdate( Ontimeupdate $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

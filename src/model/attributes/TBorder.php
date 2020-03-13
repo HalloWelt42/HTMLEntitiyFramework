@@ -11,8 +11,8 @@ trait TBorder
    * @param Border $obj
    * @return $this
    */
-    public function set_border( Border $obj ){
-        $this -> set_attribute($obj);
+    public function sBorder( Border $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

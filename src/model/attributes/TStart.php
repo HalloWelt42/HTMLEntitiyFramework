@@ -11,8 +11,8 @@ trait TStart
    * @param Start $obj
    * @return $this
    */
-    public function set_start( Start $obj ){
-        $this -> set_attribute($obj);
+    public function sStart( Start $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

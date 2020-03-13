@@ -11,8 +11,8 @@ trait TForType
    * @param ForType $obj
    * @return $this
    */
-    public function set_for( ForType $obj ){
-        $this -> set_attribute($obj);
+    public function sFor( ForType $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 

@@ -11,8 +11,8 @@ trait THigh
    * @param High $obj
    * @return $this
    */
-    public function set_high( High $obj ){
-        $this -> set_attribute($obj);
+    public function sHigh( High $obj ){
+        $this -> sAttribute($obj);
         return $this;
     }
 
